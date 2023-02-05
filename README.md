@@ -14,3 +14,14 @@ The app will allow for a simple onboarding process including new user registrati
 
 A wallet for storing funds and funds transfer function.
 
+
+### Technology used for the Front-End
+
+* React
+
+* TailwindCss
+
+* Font Awesome
+
+* React Testing Library
+
