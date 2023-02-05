@@ -1,9 +1,10 @@
+import Homepage from "./pages/landing-page/Homepage"
 
 
 function App() {
   return (
     <div className="App">
-     hello
+      <Homepage />
     </div>
   )
 }
