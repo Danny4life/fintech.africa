@@ -1,6 +1,8 @@
 
 import ButtonHomepage from "../../component/ButtonHomepage";
 import LandingPageNavbar from "../../component/landing-page-navbar/LandingPageNavbar";
+import img1 from "../../assets/img1.png";
+
 
 const Homepage = () => {
     return ( 
@@ -16,8 +18,8 @@ const Homepage = () => {
             <main className="">
                 <section className=" md:flex">
                     <div className="md:flex-1">
-                        <div className="non-italic">
-                            <h1 className="font-normal text-2xl leading-7 ml-6 mb-4 md:text-3xl
+                        <div className="non-italic bg-[#e5efe6] lg:h-[500px] h-[300px] lg:w-[742px]">
+                            <h1 className="pt-12 font-normal text-2xl leading-7 ml-6 mb-4 md:text-3xl
                             lg:font-bold lg:text-5xl lg:leading-[3.813rem] lg:ml-24 
                             text-[#3A0CA3] lg:w-[90%] lg:pt-16 lg:pl-4"
                             >
@@ -36,8 +38,10 @@ const Homepage = () => {
                            
                         </div>
                     </div>
-                    <div className="md:flex-2 md:bg-red-700">middle</div>
-                    <div className="md:flex-1 md:bg-yellow-700">right</div>
+                    <div className="md:flex-2 bg-[#d5c3b1]"></div>
+                    <div className="h-[300px] md:flex-1 lg:pl-44 lg:w-[742px] lg:h-[500px] bg-[#cbb7e9]">
+                        <img src={img1} alt="image" className="h-[300px] ml-6 md:ml-16 rounded-[50%] bg-[#7b4db5] lg:mt-11 lg:h-[455px]" />
+                    </div>
                 </section>
             </main>
         </section>
