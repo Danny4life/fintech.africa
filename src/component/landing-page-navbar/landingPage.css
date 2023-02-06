@@ -10,7 +10,8 @@
     justify-content: space-around;
     align-items: center;
     height: 75px;
-    background-color: #00828c;
+    /* background-color: #00828c; */
+    background: #FFFFFF;
     color: #012A4A;
 
 }
@@ -50,6 +51,10 @@
             cursor: pointer;
         }
 
+        .home {
+            color: #4361EE;
+        }
+
         .account {
             width: 190px;
             height: 48px;
@@ -74,7 +79,13 @@
         display: none;
     }
 
-    @media only screen and (max-width: 768px){
+    @media only screen and (min-width: 1280px) {
+
+
+
+    }
+
+    @media only screen and (max-width: 1024px){
         .logo {
             display: flex;
             position: absolute;
@@ -91,7 +102,7 @@
             display: block;
             position: absolute;
             list-style: none;
-            background-color: #005469;
+            background-color: #012A4A;
             left: 0;
             top: 75px;
             transition: all 0.5s ease-out;
@@ -115,6 +126,8 @@
     
     .account {
         border: none;
+        margin-left: auto;
+        margin-right: auto;
         
     }
     
@@ -122,12 +135,12 @@
         display: block;
         position: absolute;
         font-size: 30px;
-        color: white;
-        background-color: #00828c;
+        color: #012A4A;
         border: none;
         outline: none;
         top: 15px;
         right: 25px;
+       
         
     }
 
