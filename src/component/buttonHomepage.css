@@ -1,0 +1,18 @@
+.btn {
+    width: 190px;
+    height: 48px;
+    background: linear-gradient(105.38deg, #4361EE 19.05%, #3A0CA3 82.03%);
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}

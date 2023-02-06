@@ -1,3 +1,5 @@
+
+import ButtonHomepage from "../../component/ButtonHomepage";
 import LandingPageNavbar from "../../component/landing-page-navbar/LandingPageNavbar";
 
 const Homepage = () => {
@@ -22,11 +24,16 @@ const Homepage = () => {
                                 Quick and easy payment platform for all your transactions
                             </h1>
 
-                            <p className="ml-6 
-                            lg:w-[70%] lg:font-normal lg:text-base lg:leading-6 text-[#012A4A] lg:ml-28">
+                            <p className="ml-6 mb-4
+                            lg:w-[70%] lg:font-normal lg:text-base lg:leading-6 text-[#012A4A] lg:ml-28 lg:mb-6">
                                 Save and manage all your transaction in one place, easy payment 
                                 anytime & anyday.
                             </p>
+                            
+                            <div className="ml-6 lg:ml-28">
+                                <ButtonHomepage />
+                            </div>
+                           
                         </div>
                     </div>
                     <div className="md:flex-2 md:bg-red-700">middle</div>
