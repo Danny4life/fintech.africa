@@ -3,6 +3,9 @@ import ButtonHomepage from "../../component/ButtonHomepage";
 import LandingPageNavbar from "../../component/landing-page-navbar/LandingPageNavbar";
 import img1 from "../../assets/img1.png";
 import GoodIcon from "../../svg/GoodIcon";
+import TransferIcon from "../../svg/TransferIcon";
+import VerifyIcon from "../../svg/VerifyIcon";
+
 
 
 
@@ -41,18 +44,35 @@ const Homepage = () => {
                         </div>
                     </div>
                     <div className="md:flex-2 bg-[#d5c3b1]"></div>
-                    <div className="h-[300px] md:flex-1 
+                    <div className="sm:max-md:h-[450px] md:flex-1 
                         lg:pl-44 lg:w-[742px] lg:h-[600px] bg-[#cbb7e9]"
                         >
                         
                         <img src={img1} alt="image" 
-                            className="h-[300px] ml-6 md:ml-16 rounded-[50%] bg-[#7b4db5] 
+                            className="h-[300px] ml-6 md:ml-16 rounded-[50%] bg-[#9981b7] 
                             lg:mt-20 lg:h-[455px]" 
                         />
-                        <div className="w-[178px] h-[145px] bg-[#FFFFFF] flex absolute bottom-[18rem]">
-                            <div>
-                                <span>Easy Transfer</span>
+                        <div 
+                            className="w-[178px] h-[145px] bg-[#FFFFFF] md:max-xl:hidden
+                            lg:absolute lg:bottom-[18rem]"
+                        >
+                            <div className="flex pt-4 ml-2 gap-1">
+                                <span className="w-[24px] h-[24px] bg-[rgba(0, 0, 0, 0.04)] rounded-[50%] flex justify-center items-center"><TransferIcon /></span>
+                                <span className="font-normal text-sm leading-4 text-[#012A4A] mt-1">Easy Transfer.</span>   
                             </div>
+
+                            <div className="flex pt-4 ml-2 gap-1">
+                                <span className="w-[24px] h-[24px] bg-[rgba(0, 0, 0, 0.04)] rounded-[50%] flex justify-center items-center"><VerifyIcon /></span>
+                                <span className="font-normal text-sm leading-4 text-[#012A4A] mt-1">Verified Payment.</span>   
+                            </div>
+
+                            <div className="flex pt-4 ml-2 gap-1">
+                                <span className="w-[24px] h-[24px] bg-[rgba(0, 0, 0, 0.04)] rounded-[50%] flex justify-center items-center"><TransferIcon /></span>
+                                <span className="font-normal text-sm leading-4 text-[#012A4A] mt-1">Pay on the go.</span>   
+                            </div>
+
+
+                            
 
                         </div>
                          <div 
