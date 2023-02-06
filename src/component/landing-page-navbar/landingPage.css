@@ -7,13 +7,11 @@
 .navbar {
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 75px;
-    /* background-color: #00828c; */
     background: #FFFFFF;
     color: #012A4A;
-
 }
 
     .logo {
@@ -23,6 +21,8 @@
         font-size: 32px;
         line-height: 39px;
         color: #012A4A;
+        margin-left: 6rem;
+        
     }
 
     .nav-links {
@@ -30,6 +30,9 @@
         justify-content: flex-end;
         list-style: none;
         width: 75%;
+        /* position: sticky;
+        top: 0; */
+        /* width: 100%; */
 
     }
 
@@ -71,6 +74,7 @@
             line-height: 19px;
             text-align: center;
             color: #FFFFFF;
+            margin-right: 6rem;
 
         }
     
@@ -91,7 +95,13 @@
             position: absolute;
             top: 15px;
             left: 35px;
+            margin-left: -0.5rem;
            
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
         }
     
         .nav-links {

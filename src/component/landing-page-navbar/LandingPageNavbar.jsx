@@ -36,6 +36,7 @@ const LandingPageNavbar = () => {
 
                     <button 
                     className="mobile-menu-icon"
+                    type="button"
                     onClick={() => setIsMobile(!isMobile)}
                     >
                     {isMobile ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
