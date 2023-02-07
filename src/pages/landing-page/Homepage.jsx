@@ -5,6 +5,9 @@ import img1 from "../../assets/img1.png";
 import GoodIcon from "../../svg/GoodIcon";
 import TransferIcon from "../../svg/TransferIcon";
 import VerifyIcon from "../../svg/VerifyIcon";
+import Briefcase from "../../svg/Briefcase";
+import Transaction from "../../svg/Transaction";
+import SecurityIcon from "../../svg/SecurityIcon";
 
 
 
@@ -69,10 +72,7 @@ const Homepage = () => {
                             <div className="flex pt-4 ml-2 gap-1">
                                 <span className="w-[24px] h-[24px] bg-[rgba(0, 0, 0, 0.04)] rounded-[50%] flex justify-center items-center"><TransferIcon /></span>
                                 <span className="font-normal text-sm leading-4 text-[#012A4A] mt-1">Pay on the go.</span>   
-                            </div>
-
-
-                            
+                            </div>      
 
                         </div>
                          <div 
@@ -84,6 +84,40 @@ const Homepage = () => {
                                 </span>
                         </div>
                        
+                    </div>
+                </section>
+
+                <section>
+                    <div className="h-[453px] bg-[#E5E5E5] lg:flex lg:justify-around lg:items-center">
+                        <div className="non-italic">
+                            <h1 className="text-2xl ml-6 pt-12 mb-4 leading-7
+                            lg:font-bold lg:text-4xl lg:leading-10 text-[#3A0CA3] lg:w-[26rem] lg:mb-4">
+                                Get the convenience of transacting with our services
+                            </h1>
+                            <p className="ml-6
+                            lg:w-[26rem] font-normal text-base lg:leading-6 text-[#012A4A] mb-14">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent.
+                            </p>
+                        </div>
+
+                        <div className="lg:flex lg:flex-col lg:gap-2 flex ml-6 gap-4">
+                            <Briefcase />
+                            <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] lg:mb-12 ">Keeping secrecy</p>
+
+                            <TransferIcon />
+                            <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] mb-4">Free transaction</p>
+                        </div>
+
+                        <div className="lg:mr-60 lg:flex lg:flex-col lg:gap-2 flex ml-6 gap-4">
+                            <Transaction />
+                            <p className="w-[4.063rem]  text-sm font-normal leading-5 text-[#012A4A] lg:mb-12">Convenient transaction</p>
+
+                            <SecurityIcon />
+                            <p className="w-[4.063rem]  text-sm font-normal leading-5 text-[#012A4A]">Security gauranteed</p>
+                        </div>
+                       
+
+
                     </div>
                 </section>
             </main>
