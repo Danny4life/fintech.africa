@@ -88,29 +88,29 @@ const Homepage = () => {
                 </section>
 
                 <section>
-                    <div className="h-[453px] bg-[#E5E5E5] lg:flex lg:justify-around lg:items-center">
+                    <div className="h-[453px] bg-[#E5E5E5] md:flex md:justify-around md:items-center">
                         <div className="non-italic">
-                            <h1 className="text-2xl ml-6 pt-12 mb-4 leading-7
-                            lg:font-bold lg:text-4xl lg:leading-10 text-[#3A0CA3] lg:w-[26rem] lg:mb-4">
+                            <h1 className="text-2xl ml-6 pt-12 mb-4 leading-7 md:text-3xl
+                            lg:font-bold lg:text-4xl lg:leading-10 text-[#3A0CA3] md:w-[26rem] lg:mb-4">
                                 Get the convenience of transacting with our services
                             </h1>
                             <p className="ml-6
-                            lg:w-[26rem] font-normal text-base lg:leading-6 text-[#012A4A] mb-14">
+                            md:w-[26rem] font-normal text-base lg:leading-6 text-[#012A4A] mb-14">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent.
                             </p>
                         </div>
 
-                        <div className="lg:flex lg:flex-col lg:gap-2 flex ml-6 gap-4">
+                        <div className="md:flex md:flex-col md:gap-2 ml-6 gap-4 flex">
                             <Briefcase />
-                            <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] lg:mb-12 ">Keeping secrecy</p>
+                            <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] md:mb-12 ">Keeping secrecy</p>
 
                             <TransferIcon />
                             <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] mb-4">Free transaction</p>
                         </div>
 
-                        <div className="lg:mr-60 lg:flex lg:flex-col lg:gap-2 flex ml-6 gap-4">
+                        <div className="lg:mr-80 md:flex md:flex-col md:gap-2 ml-6 gap-4 flex">
                             <Transaction />
-                            <p className="w-[4.063rem]  text-sm font-normal leading-5 text-[#012A4A] lg:mb-12">Convenient transaction</p>
+                            <p className="w-[4.063rem]  text-sm font-normal leading-5 text-[#012A4A] md:mb-12">Convenient transaction</p>
 
                             <SecurityIcon />
                             <p className="w-[4.063rem]  text-sm font-normal leading-5 text-[#012A4A]">Security gauranteed</p>
