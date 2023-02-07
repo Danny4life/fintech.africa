@@ -101,8 +101,11 @@ const Homepage = () => {
                         </div>
 
                         <div className="md:flex md:flex-col md:gap-2 ml-6 gap-4 flex">
-                            <Briefcase />
-                            <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] md:mb-12 ">Keeping secrecy</p>
+                            <div className="hover:bg-slate-600">
+                                <Briefcase />
+                                <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] md:mb-12">Keeping secrecy</p>
+                            </div>
+                          
 
                             <TransferIcon />
                             <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] mb-4">Free transaction</p>
