@@ -56,7 +56,7 @@ const Homepage = () => {
                             lg:mt-20 lg:h-[455px]" 
                         />
                         <div 
-                            className="w-[178px] h-[145px] bg-[#FFFFFF] md:max-xl:hidden
+                            className="hidden lg:block w-[178px] h-[145px] bg-[#FFFFFF] md:max-xl:hidden
                             lg:absolute lg:bottom-[18rem]"
                         >
                             <div className="flex pt-4 ml-2 gap-1">
@@ -76,10 +76,10 @@ const Homepage = () => {
 
                         </div>
                          <div 
-                            className="flex md:max-xl:hidden gap-1 justify-center items-center absolute bottom-56 right-6
-                            md:top-24 md:right-8 w-[207px] h-[64px] bg-[#FFFFFF]">
+                            className="hidden lg:flex gap-1 justify-center items-center absolute right-6
+                            md:top-28 md:right-8 w-[207px] h-[64px] bg-[#FFFFFF]">
                                 <span><GoodIcon /></span>
-                                <span className="font-semibold text-base leading-5 text-[#012A4A]">
+                                <span className="font-semibold text-base leading-5 text-[#0b161f]">
                                     Payment Successful
                                 </span>
                         </div>
@@ -96,11 +96,12 @@ const Homepage = () => {
                             </h1>
                             <p className="ml-6
                             md:w-[26rem] font-normal text-base lg:leading-6 text-[#012A4A] mb-14">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Feugiat eget ipsum, sed praesent.
                             </p>
                         </div>
 
-                        <div className="md:flex md:flex-col md:gap-2 ml-6 gap-4 flex">
+                        <div className="md:flex md:flex-col md:gap-2 ml-6 gap-4 lg:flex hidden">
                             <div className="hover:bg-slate-600">
                                 <Briefcase />
                                 <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] md:mb-12">Keeping secrecy</p>
@@ -111,7 +112,7 @@ const Homepage = () => {
                             <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] mb-4">Free transaction</p>
                         </div>
 
-                        <div className="lg:mr-80 md:flex md:flex-col md:gap-2 ml-6 gap-4 flex">
+                        <div className="lg:mr-80 md:flex md:flex-col md:gap-2 ml-6 gap-4 lg:flex hidden">
                             <Transaction />
                             <p className="w-[4.063rem]  text-sm font-normal leading-5 text-[#012A4A] md:mb-12">Convenient transaction</p>
 

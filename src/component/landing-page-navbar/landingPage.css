@@ -9,9 +9,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 75px;
+    height: 96px;
+    /* width: 1440px; */
     background: #FFFFFF;
     color: #012A4A;
+    /* position: fixed;
+    top: 0; */
+    
 }
 
     .logo {
@@ -102,6 +106,7 @@
         .navbar {
             display: flex;
             justify-content: space-between;
+            position: static;
         }
     
         .nav-links {
