@@ -151,59 +151,8 @@ const Homepage = () => {
                                    
                                 </div>
 
-                            </div>
-                            
+                            </div>                    
                         </div>
-                        {/* <div className="non-italic">
-                            <h1 className="text-2xl ml-6 pt-12 mb-4 leading-7 md:text-3xl
-                            lg:font-bold lg:text-4xl lg:leading-10 text-[#3A0CA3] md:w-[26rem] lg:mb-4">
-                                Get the convenience of transacting with our services
-                            </h1>
-                            <p className="ml-6
-                            md:w-[26rem] font-normal text-base lg:leading-6 text-[#012A4A] mb-14">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Feugiat eget ipsum, sed praesent.
-                            </p>
-                        </div> */}
-
-                        {/* <div className="md:flex md:flex-col md:gap-2 ml-6 gap-4 lg:flex hidden">
-                            <div className="hover:bg-slate-300 w-[150px] h-[150px] flex flex-col justify-center items-center">
-                                <div className="mb-4">
-                                    <Briefcase />
-                                </div>
-                                
-                                <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] ml-4">
-                                    Keeping secrecy
-                                </p>
-                            </div>
-
-                            <div className="hover:bg-slate-300 w-[150px] h-[150px] flex flex-col justify-center items-center">
-                                <div className="mb-4">
-                                    <TransferIcon />
-                                </div>
-                                
-                                <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] ml-4">Free transaction</p>
-                            </div>
-                        </div> */}
-
-                        {/* <div className="lg:mr-40 md:flex md:flex-col md:gap-2 ml-6 gap-4 lg:flex hidden">
-
-                        <div className="hover:bg-slate-300 w-[150px] h-[150px] flex flex-col justify-center items-center">
-                                <div className="mb-4">
-                                    <Transaction />
-                                </div>
-                                
-                                <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] ml-4">Convenient transaction</p>
-                            </div>
-
-                            <div className="hover:bg-slate-300 w-[150px] h-[150px] flex flex-col justify-center items-center">
-                                <div className="mb-4">
-                                    <SecurityIcon />
-                                </div>
-                                
-                                <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] ml-4">Security gauranteed</p>
-                            </div>
-                        </div> */}
                     </div>
                 </section>
 
