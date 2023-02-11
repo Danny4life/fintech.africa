@@ -89,8 +89,72 @@ const Homepage = () => {
                 </section>
 
                 <section>
-                    <div className="h-[453px] bg-[#E5E5E5] md:flex md:justify-around md:items-center">
-                        <div className="non-italic">
+                    <div className="h-[453px] bg-[#E5E5E5] flex">
+                        <div className="flex-1 non-italic flex flex-col justify-center items-center">
+                            <h1 className="text-4xl w-[23rem] text-[#3A0CA3] font-bold ml-[-8rem] leading-10 mb-4">
+                                Get the convenience of transacting with our services
+                            </h1>
+
+                            <p className="text-base font-normal w-[26rem] text-[#012A4A] leading-6 ml-[-5rem]">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, 
+                                sed praesent.
+                            </p>
+                        </div>
+                        <div className="flex-1">
+                            <div className="flex">
+                                <div className="pt-20 pl-28">
+                                    <div className="hover:bg-slate-300 w-[150px] h-[150px] px-12 py-8">
+                                        <div className="mb-4">
+                                            <Briefcase />
+                                        </div>
+                                        <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A]">
+                                            Keeping secrecy
+                                        </p>
+                                    </div>                             
+                                </div>
+
+                                <div className="pt-20 pl-36">
+                                    <div className="hover:bg-slate-300 w-[150px] h-[150px] px-12 py-8">
+                                        <div className="mb-4">
+                                            <Transaction />
+                                        </div>
+                                        <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A]">
+                                            Convenient transaction
+                                        </p>
+                                    </div>                              
+                                </div>
+
+                            </div>
+
+                            <div className="flex">
+                                <div className="pt-2 pl-28">
+                                    <div className="hover:bg-slate-300 w-[150px] h-[150px] px-12 py-8">
+                                        <div className="mb-4">
+                                            <TransferIcon />
+                                        </div>
+                                        <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A]">
+                                            Free transaction
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+
+                                <div className="pl-36">
+                                    <div className="hover:bg-slate-300 w-[150px] h-[150px] px-12 py-8">
+                                        <div className="mb-4">
+                                            <SecurityIcon />
+                                        </div>
+                                        <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A]">
+                                            Security gauranteed
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                        {/* <div className="non-italic">
                             <h1 className="text-2xl ml-6 pt-12 mb-4 leading-7 md:text-3xl
                             lg:font-bold lg:text-4xl lg:leading-10 text-[#3A0CA3] md:w-[26rem] lg:mb-4">
                                 Get the convenience of transacting with our services
@@ -100,9 +164,9 @@ const Homepage = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Feugiat eget ipsum, sed praesent.
                             </p>
-                        </div>
+                        </div> */}
 
-                        <div className="md:flex md:flex-col md:gap-2 ml-6 gap-4 lg:flex hidden">
+                        {/* <div className="md:flex md:flex-col md:gap-2 ml-6 gap-4 lg:flex hidden">
                             <div className="hover:bg-slate-300 w-[150px] h-[150px] flex flex-col justify-center items-center">
                                 <div className="mb-4">
                                     <Briefcase />
@@ -120,9 +184,9 @@ const Homepage = () => {
                                 
                                 <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] ml-4">Free transaction</p>
                             </div>
-                        </div>
+                        </div> */}
 
-                        <div className="lg:mr-40 md:flex md:flex-col md:gap-2 ml-6 gap-4 lg:flex hidden">
+                        {/* <div className="lg:mr-40 md:flex md:flex-col md:gap-2 ml-6 gap-4 lg:flex hidden">
 
                         <div className="hover:bg-slate-300 w-[150px] h-[150px] flex flex-col justify-center items-center">
                                 <div className="mb-4">
@@ -139,7 +203,7 @@ const Homepage = () => {
                                 
                                 <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] ml-4">Security gauranteed</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
 
@@ -149,8 +213,13 @@ const Homepage = () => {
                             <img src={transaction} alt="transaction-image" className="" />
                         </div>
                         <div className="flex-1 non-italic flex flex-col justify-center items-center">
-                            <h1 className="w-[25rem] text-[#3A0CA3] font-bold leading-10 text-4xl mb-4">Choose how you want to make transfers</h1>
-                            <p className="text-base w-[25rem] font-normal text-[#012A4A] leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent.</p>
+                            <h1 className="w-[25rem] text-[#3A0CA3] font-bold leading-10 text-4xl mb-4">
+                                Choose how you want to make transfers
+                            </h1>
+                            <p className="text-base w-[25rem] font-normal text-[#012A4A] leading-6">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, 
+                                sed praesent.
+                            </p>
                         </div>
                     </div>
                 </section>
