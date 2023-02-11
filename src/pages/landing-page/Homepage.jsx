@@ -2,6 +2,7 @@
 import ButtonHomepage from "../../component/ButtonHomepage";
 import LandingPageNavbar from "../../component/landing-page-navbar/LandingPageNavbar";
 import img1 from "../../assets/img1.png";
+import transaction from "../../assets/transaction.png";
 import GoodIcon from "../../svg/GoodIcon";
 import TransferIcon from "../../svg/TransferIcon";
 import VerifyIcon from "../../svg/VerifyIcon";
@@ -102,26 +103,55 @@ const Homepage = () => {
                         </div>
 
                         <div className="md:flex md:flex-col md:gap-2 ml-6 gap-4 lg:flex hidden">
-                            <div className="hover:bg-slate-600">
-                                <Briefcase />
-                                <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] md:mb-12">Keeping secrecy</p>
+                            <div className="hover:bg-slate-300 w-[150px] h-[150px] flex flex-col justify-center items-center">
+                                <div className="mb-4">
+                                    <Briefcase />
+                                </div>
+                                
+                                <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] ml-4">
+                                    Keeping secrecy
+                                </p>
                             </div>
-                          
 
-                            <TransferIcon />
-                            <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] mb-4">Free transaction</p>
+                            <div className="hover:bg-slate-300 w-[150px] h-[150px] flex flex-col justify-center items-center">
+                                <div className="mb-4">
+                                    <TransferIcon />
+                                </div>
+                                
+                                <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] ml-4">Free transaction</p>
+                            </div>
                         </div>
 
-                        <div className="lg:mr-80 md:flex md:flex-col md:gap-2 ml-6 gap-4 lg:flex hidden">
-                            <Transaction />
-                            <p className="w-[4.063rem]  text-sm font-normal leading-5 text-[#012A4A] md:mb-12">Convenient transaction</p>
+                        <div className="lg:mr-40 md:flex md:flex-col md:gap-2 ml-6 gap-4 lg:flex hidden">
 
-                            <SecurityIcon />
-                            <p className="w-[4.063rem]  text-sm font-normal leading-5 text-[#012A4A]">Security gauranteed</p>
+                        <div className="hover:bg-slate-300 w-[150px] h-[150px] flex flex-col justify-center items-center">
+                                <div className="mb-4">
+                                    <Transaction />
+                                </div>
+                                
+                                <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] ml-4">Convenient transaction</p>
+                            </div>
+
+                            <div className="hover:bg-slate-300 w-[150px] h-[150px] flex flex-col justify-center items-center">
+                                <div className="mb-4">
+                                    <SecurityIcon />
+                                </div>
+                                
+                                <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A] ml-4">Security gauranteed</p>
+                            </div>
                         </div>
-                       
+                    </div>
+                </section>
 
-
+                <section className="bg-[rgba(0, 0, 0, 0.04)] h-[420px]">
+                    <div className="flex">
+                        <div className="flex-1 flex justify-center items-center mt-20">
+                            <img src={transaction} alt="transaction-image" className="" />
+                        </div>
+                        <div className="flex-1 non-italic flex flex-col justify-center items-center">
+                            <h1 className="w-[25rem] text-[#3A0CA3] font-bold leading-10 text-4xl mb-4">Choose how you want to make transfers</h1>
+                            <p className="text-base w-[25rem] font-normal text-[#012A4A] leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent.</p>
+                        </div>
                     </div>
                 </section>
             </main>
