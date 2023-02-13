@@ -9,6 +9,8 @@ import VerifyIcon from "../../svg/VerifyIcon";
 import Briefcase from "../../svg/Briefcase";
 import Transaction from "../../svg/Transaction";
 import SecurityIcon from "../../svg/SecurityIcon";
+import Dot1 from "../../svg/Dot1";
+import Hr1 from "../../svg/Hr1";
 
 
 
@@ -173,6 +175,96 @@ const Homepage = () => {
                             </p>
                         </div>
                     </div>
+                </section>
+
+                <section className="bg-[#E5E5E5]">
+                    <div className="flex">
+                        <div className="flex-1 non-italic">
+                            <h1 className="
+                            lg:font-bold lg:text-4xl lg:leading-10 text-[#3A0CA3] lg:pt-12 lg:ml-28 mb-8">
+                                How it works
+                            </h1>
+                            <p className="w-[26rem] font-normal text-[#012A4A] text-base ml-28 leading-6 mb-12">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent.
+                            </p>
+                            <div className="flex">
+                                <div>
+                                    <div className="
+                                    flex justify-center items-center w-[32px] h-[32px] bg-[#FFFFFFF] border border-[#012A4A] rounded-2xl ml-24"
+                                    >   
+                                        <span className="flex justify-center items-center">
+                                            <Dot1 />
+                                        </span> 
+                                    </div>
+                                    <div className="ml-28 pt-1">
+                                        <Hr1 />
+                                    </div>
+                                </div>
+                                
+
+                                <div className="non-italic ml-8">
+                                    <span className="text-sm font-light text-[#012A4A] leading-6">STEP ONE</span> 
+                                    <h2 className="text-2xl font-semibold text-[#012A4A] leading-7 mb-6 pt-4">Sign in or Sign up your account</h2>   
+                                    <p className="w-[26rem] text-base font-normal text-[#012A4A] leading-6 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Feugiat eget ipsum, sed praesent.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex">
+                                <div>
+                                    <div className="
+                                    flex justify-center items-center w-[32px] h-[32px] bg-[#FFFFFFF] border border-[#012A4A] rounded-2xl ml-24"
+                                    >   
+                                        <span className="flex justify-center items-center">
+                                            <Dot1 />
+                                        </span> 
+                                    </div>
+                                    <div className="ml-28 pt-1">
+                                        <Hr1 />
+                                    </div>
+                                </div>
+                                
+
+                                <div className="non-italic ml-8">
+                                    <span className="text-sm font-light text-[#012A4A] leading-6 mb-4">STEP TWO</span> 
+                                    <h2 className="text-2xl font-semibold text-[#012A4A] leading-7 pt-4 mb-6">Click transfer on your dashboard</h2>   
+                                    <p className="w-[26rem] text-base font-normal text-[#012A4A] leading-6 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Feugiat eget ipsum, sed praesent.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex">
+                                <div>
+                                    <div className="
+                                    flex justify-center items-center w-[32px] h-[32px] bg-[#FFFFFFF] border border-[#012A4A] rounded-2xl ml-24"
+                                    >   
+                                        <span className="flex justify-center items-center">
+                                            <Dot1 />
+                                        </span> 
+                                    </div>
+                                    <div className="ml-28 pt-1">
+                                        <Hr1 />
+                                    </div>
+                                </div>
+                                
+
+                                <div className="non-italic ml-8">
+                                    <span className="text-sm font-light text-[#012A4A] leading-6 mb-6">STEP THREE</span> 
+                                    <h2 className="text-2xl font-semibold text-[#012A4A] leading-7 pt-4 mb-6">Select your desire bank and send</h2>   
+                                    <p className="w-[26rem] text-base font-normal text-[#012A4A] leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Feugiat eget ipsum, sed praesent.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex-1">
+                            right
+                        </div>
+
+                    </div>
+
                 </section>
             </main>
         </section>
