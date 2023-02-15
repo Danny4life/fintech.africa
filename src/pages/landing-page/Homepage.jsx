@@ -273,12 +273,12 @@ const Homepage = () => {
                           
                     </div>
 
-                    <div className="non-italic text-center">
+                    <div className="non-italic text-center lg:flex lg:flex-col lg:justify-center lg:items-center">
                         <h1 className="text-2xl leading-7 font-normal pt-12 mb-6
                         lg:text-4xl lg:font-bold lg:leading-10 text-[#3A0CA3]">
                             Hear from our customers
                         </h1>
-                        <p className="text-base font-normal leading-6 text-[#012A4A] mb-16">
+                        <p className="text-base font-normal leading-6 text-[#012A4A] mb-16 lg:w-[416px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent.
 
                         </p>
@@ -308,7 +308,7 @@ const Homepage = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-4 items-center
+                    <div className="flex flex-col gap-4 items-center mb-20
                     lg:flex lg:gap-6 lg:justify-center non-italic lg:flex-row">
                         <div className="w-[23rem] h-[13rem] bg-[#E5E5E5]">
                             <h3 className="text-base font-semibold text-[#012A4A] leading-7 pt-8 ml-6 mb-6">Adekola Johnson</h3>
@@ -335,6 +335,19 @@ const Homepage = () => {
 
                 </section>
             </main>
+
+            <footer>
+                <div className="text-center
+                h-[453px] bg-[#cbb7e9] non-italic lg:flex lg:flex-col lg:justify-center lg:items-center">
+                    <h1 className="text-2xl leading-7 font-normal pt-12
+                    lg:text-5xl lg:font-bold lg:leading-[65px] text-[#000000] mb-8">
+                        Subscribe on our Newsletter
+                    </h1>
+                    <p className="lg:w-[628px] text-base font-normal leading-6 text-[#012A4A]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus in orci quis eleifend id. Adipiscing cras scelerisque aliquet nisi, velit, aliquam tortor vestibulum.
+                    </p>
+                </div>
+            </footer>
         </section>
        
      );
