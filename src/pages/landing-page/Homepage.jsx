@@ -2,6 +2,7 @@
 import ButtonHomepage from "../../component/ButtonHomepage";
 import LandingPageNavbar from "../../component/landing-page-navbar/LandingPageNavbar";
 import img1 from "../../assets/img1.png";
+import img2 from "../../assets/photo.png";
 import transaction from "../../assets/transaction.png";
 import GoodIcon from "../../svg/GoodIcon";
 import TransferIcon from "../../svg/TransferIcon";
@@ -11,6 +12,7 @@ import Transaction from "../../svg/Transaction";
 import SecurityIcon from "../../svg/SecurityIcon";
 import Dot1 from "../../svg/Dot1";
 import Hr1 from "../../svg/Hr1";
+
 
 
 
@@ -259,10 +261,14 @@ const Homepage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex-1">
-                            right
-                        </div>
+                        <div className="flex-1 py-16 ml-44">
+                            <div className="w-[476px] h-[577px] bg-[#cbb7e9] rounded-2xl flex justify-center">
+                                <img src={img2} alt="image" />
 
+                            </div>
+                           
+                        </div>
+                          
                     </div>
 
                 </section>
@@ -273,3 +279,8 @@ const Homepage = () => {
 }
  
 export default Homepage;
+
+
+
+
+
