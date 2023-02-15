@@ -346,6 +346,11 @@ const Homepage = () => {
                     <p className="lg:w-[628px] text-base font-normal leading-6 text-[#012A4A]">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus in orci quis eleifend id. Adipiscing cras scelerisque aliquet nisi, velit, aliquam tortor vestibulum.
                     </p>
+                    <div className="box-border pt-8 lg:gap-4 lg:flex">
+                        <input className="mb-8 text-base font-normal text-[#767676] leading-6 w-[263px] h-[58px] bg-[#FFFFFF] py-4 px-8 border border-[#767676]" placeholder="@ Email"></input>
+                        <button className="text-base text-[#FFFFFF] font-normal leading-6 w-[263px] h-[58px] bg-[#4361EE] py-4 px-8">Subscribe</button>
+                        
+                    </div>
                 </div>
             </footer>
         </section>
