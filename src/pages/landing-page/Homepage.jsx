@@ -182,24 +182,24 @@ const Homepage = () => {
                 <section className="bg-[#E5E5E5]">
                     <div className="lg:flex">
                         <div className="lg:flex-1 non-italic">
-                            <h1 className="
+                            <h1 className="text-2xl leading-7 font-normal ml-6 pt-12
                             lg:font-bold lg:text-4xl lg:leading-10 text-[#3A0CA3] lg:pt-12 lg:ml-28 mb-8">
                                 How it works
                             </h1>
-                            <p className="
-                            lg:w-[26rem] lg:font-normal lg:text-[#012A4A] lg:text-base lg:ml-28 leading-6 mb-12">
+                            <p className="ml-6
+                            lg:w-[26rem] font-normal lg:text-[#012A4A] text-base lg:ml-28 leading-6 mb-12">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent.
                             </p>
                             <div className="flex">
                                 <div>
-                                    <div className="
+                                    <div className="ml-6
                                     flex justify-center items-center w-[32px] h-[32px] bg-[#FFFFFFF] border border-[#012A4A] rounded-2xl lg:ml-24"
                                     >   
                                         <span className="flex justify-center items-center">
                                             <Dot1 />
                                         </span> 
                                     </div>
-                                    <div className="lg:ml-28 pt-1">
+                                    <div className="lg:ml-28 pt-1 ml-9">
                                         <Hr1 />
                                     </div>
                                 </div>
@@ -216,14 +216,14 @@ const Homepage = () => {
 
                             <div className="flex">
                                 <div>
-                                    <div className="
+                                    <div className="ml-6
                                     flex justify-center items-center w-[32px] h-[32px] bg-[#FFFFFFF] border border-[#012A4A] rounded-2xl lg:ml-24"
                                     >   
                                         <span className="flex justify-center items-center">
                                             <Dot1 />
                                         </span> 
                                     </div>
-                                    <div className="lg:ml-28 pt-1">
+                                    <div className="lg:ml-28 pt-1 ml-9">
                                         <Hr1 />
                                     </div>
                                 </div>
@@ -240,14 +240,14 @@ const Homepage = () => {
 
                             <div className="flex">
                                 <div>
-                                    <div className="
+                                    <div className="ml-6
                                     flex justify-center items-center w-[32px] h-[32px] bg-[#FFFFFFF] border border-[#012A4A] rounded-2xl lg:ml-24"
                                     >   
                                         <span className="flex justify-center items-center">
                                             <Dot1 />
                                         </span> 
                                     </div>
-                                    <div className="lg:ml-28 pt-1">
+                                    <div className="lg:ml-28 pt-1 ml-9">
                                         <Hr1 />
                                     </div>
                                 </div>
@@ -256,15 +256,16 @@ const Homepage = () => {
                                 <div className="non-italic ml-8">
                                     <span className="text-sm font-light text-[#012A4A] leading-6 mb-6">STEP THREE</span> 
                                     <h2 className="lg:text-2xl font-semibold text-[#012A4A] leading-7 pt-4 mb-6">Select your desire bank and send</h2>   
-                                    <p className="lg:w-[26rem] text-base font-normal text-[#012A4A] leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    <p className="lg:w-[26rem] text-base font-normal text-[#012A4A] leading-6 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                         Feugiat eget ipsum, sed praesent.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div className="flex-1 py-16 ml-44 hidden lg:block">
-                            <div className="w-[476px] h-[577px] bg-[#cbb7e9] rounded-2xl flex justify-center">
-                                <img src={img2} alt="image" />
+                        <div className="lg:flex-1 lg:py-16 lg:ml-44 lg:block flex justify-center">
+                            <div className="
+                            lg:w-[476px] w-[350px] lg:h-[577px] h-[400px] bg-[#cbb7e9] rounded-2xl flex justify-center">
+                                <img src={img2} alt="image" className="h-[400px] lg:h-[577px]" />
 
                             </div>
                            
