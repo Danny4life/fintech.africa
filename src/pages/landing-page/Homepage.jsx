@@ -93,7 +93,7 @@ const Homepage = () => {
                 </section>
 
                 <section>
-                    <div className="h-[453px] bg-[#E5E5E5] lg:flex">
+                    <div className="h-[453px] bg-[#FFFFFF] lg:flex">
                         <div className="lg:flex-1 non-italic lg:flex lg:flex-col justify-center items-center">
                             <h1 className="text-2xl leading-7 ml-6 w-[80%] pt-12 font-normal
                             lg:text-4xl lg:w-[23rem] text-[#3A0CA3] lg:font-bold lg:ml-[-8rem] lg:leading-10 mb-4">
@@ -161,7 +161,7 @@ const Homepage = () => {
                     </div>
                 </section>
 
-                <section className="bg-[rgba(0, 0, 0, 0.04)] h-[420px]">
+                <section className="bg-[#E5E5E5] h-[420px]">
                     <div className="lg:flex">
                         <div className="lg:flex-1 lg:flex justify-center items-center lg:mt-20">
                             <img src={transaction} alt="transaction-image" className="" />
@@ -179,7 +179,7 @@ const Homepage = () => {
                     </div>
                 </section>
 
-                <section className="bg-[#E5E5E5]">
+                <section className="bg-[#FFFFFF]">
                     <div className="lg:flex">
                         <div className="lg:flex-1 non-italic">
                             <h1 className="text-2xl leading-7 font-normal ml-6 pt-12
@@ -278,10 +278,59 @@ const Homepage = () => {
                         lg:text-4xl lg:font-bold lg:leading-10 text-[#3A0CA3]">
                             Hear from our customers
                         </h1>
-                        <p className="text-base font-normal leading-6 text-[#012A4A]">
+                        <p className="text-base font-normal leading-6 text-[#012A4A] mb-16">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent.
 
                         </p>
+                    </div>
+
+                    <div className="lg:flex lg:gap-6 lg:justify-center lg:flex-row non-italic flex flex-col gap-4 items-center lg:mb-12 mb-4">
+                        <div className="w-[23rem] h-[13rem] bg-[#E5E5E5]">
+                            <h3 className="text-base font-semibold text-[#012A4A] leading-7 pt-8 ml-6 mb-6">Adekola Johnson</h3>
+                            <p className="w-[326px] text-base font-normal leading-7 text-[#012A4A] ml-6">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+
+                        </div>
+                       <div className="w-[23rem] h-[13rem] bg-[#E5E5E5]">
+                            <h3 className="text-base font-semibold text-[#012A4A] leading-7 pt-8 ml-6 mb-6">Adekola Johnson</h3>
+                            <p className="w-[326px] text-base font-normal leading-7 text-[#012A4A] ml-6">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+
+                        </div>
+                        <div className="w-[23rem] h-[13rem] bg-[#E5E5E5]">
+                            <h3 className="text-base font-semibold text-[#012A4A] leading-7 pt-8 ml-6 mb-6">Adekola Johnsonss</h3>
+                            <p className="w-[326px] text-base font-normal leading-7 text-[#012A4A] ml-6">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-4 items-center
+                    lg:flex lg:gap-6 lg:justify-center non-italic lg:flex-row">
+                        <div className="w-[23rem] h-[13rem] bg-[#E5E5E5]">
+                            <h3 className="text-base font-semibold text-[#012A4A] leading-7 pt-8 ml-6 mb-6">Adekola Johnson</h3>
+                            <p className="w-[326px] text-base font-normal leading-7 text-[#012A4A] ml-6">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+
+                        </div>
+                       <div className="w-[23rem] h-[13rem] bg-[#E5E5E5]">
+                            <h3 className="text-base font-semibold text-[#012A4A] leading-7 pt-8 ml-6 mb-6">Adekola Johnson</h3>
+                            <p className="w-[326px] text-base font-normal leading-7 text-[#012A4A] ml-6">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+
+                        </div>
+                        <div className="w-[23rem] h-[13rem] bg-[#E5E5E5]">
+                            <h3 className="text-base font-semibold text-[#012A4A] leading-7 pt-8 ml-6 mb-6">Adekola Johnson</h3>
+                            <p className="w-[326px] text-base font-normal leading-7 text-[#012A4A] ml-6">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+
+                        </div>
                     </div>
 
                 </section>
