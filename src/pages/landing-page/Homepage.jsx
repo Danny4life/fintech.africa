@@ -12,6 +12,10 @@ import Transaction from "../../svg/Transaction";
 import SecurityIcon from "../../svg/SecurityIcon";
 import Dot1 from "../../svg/Dot1";
 import Hr1 from "../../svg/Hr1";
+import Facebook from "../../svg/FacebookIcon";
+import Twitter from "../../svg/Twitter";
+import LinkedinIcon from "../../svg/LinkedinIcon";
+
 
 
 
@@ -351,6 +355,25 @@ const Homepage = () => {
                         <button className="text-base text-[#FFFFFF] font-normal leading-6 w-[263px] h-[58px] bg-[#4361EE] py-4 px-8">Subscribe</button>       
                     </div>
                     <p className="text-base text-[#012A4A] leading-6 font-normal">We will never spam you. Only useful mails with promo and events</p>
+                </div>
+
+                <div className="h-[166px] bg-[#012A4A] non-italic">
+                    <div className="lg:flex lg:justify-around items-center lg:pt-12 pt-4">
+                        <h3 className="lg:text-2xl font-bold text-[#FFFFFF] leading-7">Fintech.africa</h3>
+                        <div className="flex gap-4 mb-4 lg:mb-0">
+                            <a href="#" className="text-base font-semibold leading-6 text-[#FFFFFF] tracking-tight">Home</a>
+                            <a href="#" className="text-base font-semibold leading-6 text-[#FFFFFF] tracking-tight">About Us</a>
+                            <a href="#" className="text-base font-semibold leading-6 text-[#FFFFFF] tracking-tight">Features</a>
+                            <a href="#" className="text-base font-semibold leading-6 text-[#FFFFFF] tracking-tight">Contact Us</a>
+                        </div>
+                        <div className="flex gap-4 cursor-pointer">
+                            <Facebook />
+                            <Twitter />
+                            <LinkedinIcon />
+                          
+                        </div>
+                    </div>
+
                 </div>
             </footer>
         </section>
