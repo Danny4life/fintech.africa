@@ -358,7 +358,7 @@ const Homepage = () => {
                 </div>
 
                 <div className="h-[166px] bg-[#012A4A] non-italic">
-                    <div className="lg:flex lg:justify-around items-center lg:pt-12 pt-4">
+                    <div className="lg:flex lg:justify-around items-center lg:pt-12 pt-4 ml-6">
                         <h3 className="lg:text-2xl font-bold text-[#FFFFFF] leading-7">Fintech.africa</h3>
                         <div className="flex gap-4 mb-4 lg:mb-0">
                             <a href="#" className="text-base font-semibold leading-6 text-[#FFFFFF] tracking-tight">Home</a>
@@ -371,6 +371,19 @@ const Homepage = () => {
                             <Twitter />
                             <LinkedinIcon />
                           
+                        </div>
+                    </div>
+
+                    <div className="lg:flex lg:justify-around items-center lg:pt-12 pt-4 ml-6">
+                        <h3 className="text-sm font-normal text-[#FFFFFF] leading-6 tracking-tighter">© 2023 All rights reserved</h3>
+                        <div className="flex gap-4 mb-4 lg:mb-0">
+                            <a href="#" className="text-sm font-normal leading-6 text-[#FFFFFF] tracking-tight">Privacy Policy</a>
+                            <a href="#" className="text-sm font-normal leading-6 text-[#FFFFFF] tracking-tight">Terms of conditions</a>
+                            <a href="#" className="text-sm font-normal leading-6 text-[#FFFFFF] tracking-tight">Legal</a>
+                            <a href="#" className="text-sm font-normal leading-6 text-[#FFFFFF] tracking-tight">Help</a>
+                        </div>
+                        <div className="hidden lg:block">
+                           <span className="text-sm font-normal leading-6 text-[#FFFFFF] tracking-tight">English Version</span>
                         </div>
                     </div>
 
