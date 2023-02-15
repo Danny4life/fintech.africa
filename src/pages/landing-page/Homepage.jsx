@@ -348,9 +348,9 @@ const Homepage = () => {
                     </p>
                     <div className="box-border pt-8 lg:gap-4 lg:flex">
                         <input className="mb-8 text-base font-normal text-[#767676] leading-6 w-[263px] h-[58px] bg-[#FFFFFF] py-4 px-8 border border-[#767676]" placeholder="@ Email"></input>
-                        <button className="text-base text-[#FFFFFF] font-normal leading-6 w-[263px] h-[58px] bg-[#4361EE] py-4 px-8">Subscribe</button>
-                        
+                        <button className="text-base text-[#FFFFFF] font-normal leading-6 w-[263px] h-[58px] bg-[#4361EE] py-4 px-8">Subscribe</button>       
                     </div>
+                    <p className="text-base text-[#012A4A] leading-6 font-normal">We will never spam you. Only useful mails with promo and events</p>
                 </div>
             </footer>
         </section>
