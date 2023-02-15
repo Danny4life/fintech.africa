@@ -273,6 +273,17 @@ const Homepage = () => {
                           
                     </div>
 
+                    <div className="non-italic text-center">
+                        <h1 className="text-2xl leading-7 font-normal pt-12 mb-6
+                        lg:text-4xl lg:font-bold lg:leading-10 text-[#3A0CA3]">
+                            Hear from our customers
+                        </h1>
+                        <p className="text-base font-normal leading-6 text-[#012A4A]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent.
+
+                        </p>
+                    </div>
+
                 </section>
             </main>
         </section>
