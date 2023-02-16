@@ -19,8 +19,7 @@ const SectionTwo = ({ briefcase, transaction, transfer, security}) => {
                             <div className="lg:flex">
                                 <div className="lg:pt-20 lg:pl-28">
                                     <div className="lg:hover:bg-slate-300 lg:w-[150px] lg:h-[150px] lg:px-12 lg:py-8">
-                                        <div className="mb-4">
-                                            {/* <Briefcase /> */}
+                                        <div className="mb-4">  
                                             {briefcase}
                                         </div>
                                         <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A]">
@@ -32,7 +31,6 @@ const SectionTwo = ({ briefcase, transaction, transfer, security}) => {
                                 <div className="lg:pt-20 lg:pl-36">
                                     <div className="lg:hover:bg-slate-300 lg:w-[150px] lg:h-[150px] lg:px-12 lg:py-8">
                                         <div className="mb-4">
-                                            {/* <Transaction /> */}
                                             {transaction}
                                         </div>
                                         <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A]">
@@ -47,7 +45,6 @@ const SectionTwo = ({ briefcase, transaction, transfer, security}) => {
                                 <div className="lg:pt-2 lg:pl-28">
                                     <div className="lg:hover:bg-slate-300 lg:w-[150px] lg:h-[150px] lg:px-12 lg:py-8">
                                         <div className="mb-4">
-                                            {/* <TransferIcon /> */}
                                             {transfer}
                                         </div>
                                         <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A]">
@@ -60,7 +57,6 @@ const SectionTwo = ({ briefcase, transaction, transfer, security}) => {
                                 <div className="lg:pl-36">
                                     <div className="lg:hover:bg-slate-300 lg:w-[150px] lg:h-[150px] lg:px-12 lg:py-8">
                                         <div className="mb-4">
-                                            {/* <SecurityIcon /> */}
                                             {security}
                                         </div>
                                         <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A]">
