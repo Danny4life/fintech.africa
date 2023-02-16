@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img from "../../assets/signup-image.jpg";
 
 
@@ -132,16 +133,14 @@ const Signup = () => {
                             </button>
                            </div>
                            <div className="lg:ml-48 ml-6">
-                             <span className="text-base font-normal text-[#000000] leading-6 cursor-pointer">Already have an account? Login</span>
+                             <Link to="/" className="text-base font-normal text-[#000000] leading-6 cursor-pointer">Already have an account? Login</Link>
                            </div>
                         </div>
                     </form>
-                  
-
                 </div>
                 <div className="lg:flex-1">
-                    <div>
-                        <img src={img} alt="image" className="lg:h-[1284px] hidden lg:block object-cover" />
+                    <div className="hidden lg:flex">
+                        <img src={img} alt="image" className="lg:h-[1284px] object-cover" />
                     </div>
                 </div>
 
