@@ -1,3 +1,7 @@
+import img from "../../assets/signup-image.jpg";
+
+
+
 const Signup = () => {
     return ( 
         <section>
@@ -136,7 +140,9 @@ const Signup = () => {
 
                 </div>
                 <div className="lg:flex-1">
-                    right
+                    <div>
+                        <img src={img} alt="image" className="lg:h-[1284px] hidden lg:block object-cover" />
+                    </div>
                 </div>
 
             </section>
