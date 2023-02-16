@@ -12,16 +12,16 @@ const EmailVerification = () => {
                     lg:text-3xl font-bold leading-10 text-[#21334F] lg:mb-8">
                         Verify your email
                     </h3>
-                    <p className="w-[18rem] text-base font-normal text-[#21334F] mb-6">
-                        Hi there, use the link below to verify your email and start enjoying Fintech
+                    <p className="w-[21rem] text-base font-normal text-[#21334F] mb-6">
+                        Hi there, use the link sent to your email to verify your email and start enjoying Fintech
                     </p>
-                    <button 
+                    {/* <button 
                     type="button"
                     className="text-white
                     w-[204px] h-[62px] bg-[#4361EE] py-5 px-5 flex justify-center items-center text-base font-semibold leading-6"
                     >
                         Verify email
-                    </button>
+                    </button> */}
 
                 </div>
                 
