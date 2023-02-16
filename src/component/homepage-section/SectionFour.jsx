@@ -89,10 +89,8 @@ const SectionFour = ({ dot, hr, img2 }) => {
                             lg:w-[476px] w-[350px] lg:h-[577px] h-[400px] bg-[#cbb7e9] rounded-2xl flex justify-center">
                                 <img src={img2} alt="image" className="h-[400px] lg:h-[577px]" />
 
-                            </div>
-                           
-                        </div>
-                          
+                            </div>                       
+                        </div>                    
                     </div>
 
                     <div className="non-italic text-center lg:flex lg:flex-col lg:justify-center lg:items-center">
@@ -126,7 +124,6 @@ const SectionFour = ({ dot, hr, img2 }) => {
                             <p className="w-[326px] text-base font-normal leading-7 text-[#012A4A] ml-6">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent. Lorem ipsum dolor sit amet, consectetur adipiscing elit
                             </p>
-
                         </div>
                     </div>
 
@@ -137,7 +134,6 @@ const SectionFour = ({ dot, hr, img2 }) => {
                             <p className="w-[326px] text-base font-normal leading-7 text-[#012A4A] ml-6">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent. Lorem ipsum dolor sit amet, consectetur adipiscing elit
                             </p>
-
                         </div>
                        <div className="w-[23rem] h-[13rem] bg-[#E5E5E5]">
                             <h3 className="text-base font-semibold text-[#012A4A] leading-7 pt-8 ml-6 mb-6">Adekola Johnson</h3>
@@ -151,10 +147,8 @@ const SectionFour = ({ dot, hr, img2 }) => {
                             <p className="w-[326px] text-base font-normal leading-7 text-[#012A4A] ml-6">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eget ipsum, sed praesent. Lorem ipsum dolor sit amet, consectetur adipiscing elit
                             </p>
-
                         </div>
                     </div>
-
                 </section>
         </main>
      );

@@ -50,7 +50,6 @@ const SectionOne = ({ btn, img, good, verify, transfer }) => {
                                 <span>{transfer}</span>
                                 <span className="font-normal text-sm leading-4 text-[#012A4A] mt-1">Pay on the go.</span>   
                             </div>      
-
                         </div>
                          <div 
                             className="hidden lg:flex gap-1 justify-center items-center absolute right-6
@@ -59,11 +58,9 @@ const SectionOne = ({ btn, img, good, verify, transfer }) => {
                                 <span className="font-semibold text-base leading-5 text-[#0b161f]">
                                     Payment Successful
                                 </span>
-                        </div>
-                       
+                       </div>           
                     </div>
                 </section>
-
         </main>
      );
 }

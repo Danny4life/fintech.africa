@@ -29,8 +29,7 @@ const FooterSection = ({ facebook, twitter, linkedin }) => {
                         <div className="flex gap-4 cursor-pointer">
                             {facebook}
                             {twitter}
-                            {linkedin}
-                          
+                            {linkedin}                       
                         </div>
                     </div>
 

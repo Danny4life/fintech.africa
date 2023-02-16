@@ -23,9 +23,6 @@ import FooterSection from "../../component/homepage-section/FooterSection";
 
 
 
-
-
-
 const Homepage = () => {
     return ( 
         <section>
@@ -36,7 +33,7 @@ const Homepage = () => {
                     </header>                
                 </nav>            
             </section>
-            <main className="">
+            <main>
                 <section>
                     <SectionOne 
                         btn={<ButtonHomepage />} 
@@ -45,6 +42,7 @@ const Homepage = () => {
                         transfer={<TransferIcon />} 
                     />
                 </section>
+
                 <section>
                     <SectionTwo 
                         briefcase={<Briefcase />} 
@@ -53,11 +51,13 @@ const Homepage = () => {
                         security={<SecurityIcon />} 
                     />
                 </section>
+
                 <section>
                     <SectionThree 
                         transactionOne={transaction} 
                     />
                 </section>
+
                 <section>
                     <SectionFour 
                         dot={<Dot1 />} 
@@ -74,8 +74,7 @@ const Homepage = () => {
                     linkedin={<LinkedinIcon />} 
                 />
             </footer>
-        </section>
-       
+        </section>    
      );
 }
  

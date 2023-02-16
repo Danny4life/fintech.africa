@@ -1,7 +1,6 @@
 const SectionTwo = ({ briefcase, transaction, transfer, security}) => {
     return (
         <main>
-        
                 <section>
                     <div className="h-[453px] bg-[#FFFFFF] lg:flex">
                         <div className="lg:flex-1 non-italic lg:flex lg:flex-col justify-center items-center">
