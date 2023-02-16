@@ -23,8 +23,7 @@ const EmailVerification = () => {
                         Verify email
                     </button> */}
 
-                </div>
-                
+                </div>    
             </div>
         </section>
      );
