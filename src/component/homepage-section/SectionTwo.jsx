@@ -1,4 +1,4 @@
-const SectionTwo = ({ briefcase, Transaction, transfer, security}) => {
+const SectionTwo = ({ briefcase, transaction, transfer, security}) => {
     return (
         <main>
         
@@ -33,7 +33,7 @@ const SectionTwo = ({ briefcase, Transaction, transfer, security}) => {
                                     <div className="lg:hover:bg-slate-300 lg:w-[150px] lg:h-[150px] lg:px-12 lg:py-8">
                                         <div className="mb-4">
                                             {/* <Transaction /> */}
-                                            {Transaction}
+                                            {transaction}
                                         </div>
                                         <p className="w-[4.063rem] text-sm font-normal leading-5 text-[#012A4A]">
                                             Convenient transaction
