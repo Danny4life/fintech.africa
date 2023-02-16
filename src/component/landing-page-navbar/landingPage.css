@@ -4,17 +4,22 @@
     padding: 0;
 }
 
+nav {
+    position: relative;
+}
+
 .navbar {
 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 96px;
-    /* width: 1440px; */
+    width: 1440px;
     background: #FFFFFF;
     color: #012A4A;
-    /* position: fixed;
-    top: 0; */
+    position: absolute;
+    top: 0;  
+    position: fixed;
     
 }
 
@@ -107,6 +112,7 @@
             display: flex;
             justify-content: space-between;
             position: static;
+            width: 0;
         }
     
         .nav-links {

@@ -35,10 +35,10 @@ const Homepage = () => {
             <main className="">
                 <section className=" md:flex">
                     <div className="md:flex-1">
-                        <div className="non-italic bg-[#e5efe6] lg:h-[600px] h-[300px] lg:w-[742px]">
+                        <div className="non-italic bg-[#e5efe6] lg:h-[742px] h-[300px] lg:w-[742px]">
                             <h1 className="pt-12 font-normal text-2xl leading-7 ml-6 mb-4 md:text-3xl
                             lg:font-bold lg:text-5xl lg:leading-[3.813rem] lg:ml-24 
-                            text-[#3A0CA3] lg:w-[90%] lg:pt-28 lg:pl-4"
+                            text-[#3A0CA3] lg:w-[90%] lg:pt-60 lg:pl-4"
                             >
                                 Quick and easy payment platform for all your transactions
                             </h1>
@@ -57,7 +57,7 @@ const Homepage = () => {
                     </div>
                     <div className="md:flex-2 bg-[#d5c3b1]"></div>
                     <div className="sm:max-md:h-[450px] md:flex-1 
-                        lg:pl-44 lg:w-[742px] lg:h-[600px] bg-[#cbb7e9]"
+                        lg:pl-44 lg:w-[742px] lg:h-[742px] bg-[#cbb7e9] lg:pt-32"
                         >
                         
                         <img src={img1} alt="image" 
@@ -86,7 +86,7 @@ const Homepage = () => {
                         </div>
                          <div 
                             className="hidden lg:flex gap-1 justify-center items-center absolute right-6
-                            md:top-28 md:right-8 w-[207px] h-[64px] bg-[#FFFFFF]">
+                            md:top-40 md:right-8 w-[207px] h-[64px] bg-[#FFFFFF] lg:rounded-lg">
                                 <span><GoodIcon /></span>
                                 <span className="font-semibold text-base leading-5 text-[#0b161f]">
                                     Payment Successful
@@ -358,7 +358,7 @@ const Homepage = () => {
                 </div>
 
                 <div className="h-[166px] bg-[#012A4A] non-italic">
-                    <div className="lg:flex lg:justify-around items-center lg:pt-12 pt-4 ml-6">
+                    <div className="lg:flex lg:justify-around lg:items-center lg:pt-12 pt-4 ml-6">
                         <h3 className="lg:text-2xl font-bold text-[#FFFFFF] leading-7">Fintech.africa</h3>
                         <div className="flex gap-4 mb-4 lg:mb-0">
                             <a href="#" className="text-base font-semibold leading-6 text-[#FFFFFF] tracking-tight">Home</a>
@@ -374,7 +374,7 @@ const Homepage = () => {
                         </div>
                     </div>
 
-                    <div className="lg:flex lg:justify-around items-center lg:pt-12 pt-4 ml-6">
+                    <div className="lg:flex lg:justify-around lg:items-center lg:pt-12 pt-4 ml-6">
                         <h3 className="text-sm font-normal text-[#FFFFFF] leading-6 tracking-tighter">© 2023 All rights reserved</h3>
                         <div className="flex gap-4 mb-4 lg:mb-0">
                             <a href="#" className="text-sm font-normal leading-6 text-[#FFFFFF] tracking-tight">Privacy Policy</a>
