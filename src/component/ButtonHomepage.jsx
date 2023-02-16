@@ -4,7 +4,7 @@ import "./buttonHomepage.css"
 const ButtonHomepage = () => {
     return ( 
         <div className="btn">
-            <Link to="/">
+            <Link to="/signup">
                 Create an account
             </Link>
         </div>
