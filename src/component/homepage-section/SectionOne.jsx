@@ -1,30 +1,30 @@
 const SectionOne = ({ btn, img, good, verify, transfer }) => {
     return ( 
         <main>
-                 <section className=" md:flex">
-                    <div className="md:flex-1">
-                        <div className="non-italic bg-[#e5efe6] lg:h-[742px] h-[300px] lg:w-[742px]">
-                            <h1 className="pt-12 font-normal text-2xl leading-7 ml-6 mb-4 md:text-3xl
+            <section className=" md:flex">
+                <div className="md:flex-1">
+                     <div className="non-italic bg-[#e5efe6] lg:h-[742px] h-[300px] lg:w-[742px]">
+                        <h1 className="pt-12 font-normal text-2xl leading-7 ml-6 mb-4 md:text-3xl
                             lg:font-bold lg:text-5xl lg:leading-[3.813rem] lg:ml-24 
                             text-[#3A0CA3] lg:w-[90%] lg:pt-60 lg:pl-4"
                             >
                                 Quick and easy payment platform for all your transactions
-                            </h1>
+                        </h1>
 
-                            <p className="ml-6 mb-4
+                        <p className="ml-6 mb-4
                             lg:w-[70%] lg:font-normal lg:text-base lg:leading-6 text-[#012A4A] lg:ml-28 lg:mb-6">
                                 Save and manage all your transaction in one place, easy payment 
                                 anytime & anyday.
-                            </p>
+                        </p>
                             
-                            <div className="ml-6 lg:ml-28">
+                        <div className="ml-6 lg:ml-28">
                                 {btn}
-                            </div>
+                        </div>
                            
                         </div>
                     </div>
-                    <div className="md:flex-2 bg-[#d5c3b1]"></div>
-                    <div className="sm:max-md:h-[450px] md:flex-1 
+                <div className="md:flex-2 bg-[#d5c3b1]"></div>
+                <div className="sm:max-md:h-[450px] md:flex-1 
                         lg:pl-44 lg:w-[742px] lg:h-[742px] bg-[#cbb7e9] lg:pt-32"
                         >
                         
