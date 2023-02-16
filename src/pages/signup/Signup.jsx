@@ -139,7 +139,7 @@ const navigate = useNavigate();
                             </button>
                            </div>
                            <div className="lg:ml-48 ml-6">
-                             <Link to="/" className="text-base font-normal text-[#000000] leading-6 cursor-pointer">Already have an account? Login</Link>
+                             <Link to="/login" className="text-base font-normal text-[#000000] leading-6 cursor-pointer">Already have an account? Login</Link>
                            </div>
                         </div>
                     </form>
