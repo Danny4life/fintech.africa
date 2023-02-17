@@ -16,12 +16,12 @@ const PasswordResetVerification = () => {
                 <p className="w-[21rem] text-base font-normal text-[#21334F] mb-6">
                 We sent a password reset link to your email. Please click the link to reset your password
                 </p>
-                <Link to="/" className="text-[#012A4A] text-base font-normal leading-5 lg:mb-8 mb-3">
+                <Link to="#" className="text-[#012A4A] text-base font-normal leading-5 lg:mb-8 mb-3">
                     Don’t receive the email? <span className="text-[#4361EE] font-bold">Click to Resend link</span>
                 </Link>
             </div>  
             <div className="flex justify-center items-center">
-                <Link to="/" 
+                <Link to="/login" 
                 className="text-base font-medium leading-5 text-[#FFFFFF]
                 w-[132px] h-[42px] bg-[#4361EE] flex justify-center items-center">
                     Back to Login

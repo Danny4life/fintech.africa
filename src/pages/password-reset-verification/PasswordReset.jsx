@@ -43,7 +43,7 @@ const PasswordReset = () => {
                 </button>
             </div>  
             <div className="flex justify-center items-center">
-                <Link to="/" 
+                <Link to="/login" 
                 className="text-base font-medium leading-5 text-[#000000;]
                 w-[132px] h-[42px] bg-[#E5E5E5] flex justify-center items-center">
                     Back to Login
