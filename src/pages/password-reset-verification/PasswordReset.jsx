@@ -37,7 +37,7 @@ const PasswordReset = () => {
                                 text-base font-bold text-[#FFFFFF] 
                                 leading-4 lg:w-[24.688rem] h-[3rem] bg-[#4361EE]
                                  rounded-md py-2 px-2"
-                    onClick={() => navigate("/email-verification")}
+                    onClick={() => navigate("/password-reset-verification")}
                             >
                                 Reset Password
                 </button>
