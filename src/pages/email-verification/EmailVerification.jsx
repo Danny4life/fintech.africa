@@ -15,14 +15,6 @@ const EmailVerification = () => {
                     <p className="w-[21rem] text-base font-normal text-[#21334F] mb-6">
                         Hi there, use the link sent to your email to verify your email and start enjoying Fintech
                     </p>
-                    {/* <button 
-                    type="button"
-                    className="text-white
-                    w-[204px] h-[62px] bg-[#4361EE] py-5 px-5 flex justify-center items-center text-base font-semibold leading-6"
-                    >
-                        Verify email
-                    </button> */}
-
                 </div>    
             </div>
         </section>

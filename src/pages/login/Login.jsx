@@ -50,7 +50,7 @@ const Login = () => {
                                 />
                             </div>
                             <div className="mb-6">
-                                <Link to="/" className="ml-6
+                                <Link to="/password-reset" className="ml-6
                                     lg:ml-48 text-base font-normal text-[#4285F4] leading-6">
                                     Forget passord?
                                 </Link>
@@ -65,7 +65,7 @@ const Login = () => {
                             </button>
                            </div>
                            <div className="lg:ml-48 ml-6">
-                             <Link to="/login" className="text-base font-normal text-[#000000] leading-6 cursor-pointer">Don't have an account? <span className="text-base font-bold leading-6 text-[#4361EE]">Create an account</span></Link>
+                             <Link to="/signup" className="text-base font-normal text-[#000000] leading-6 cursor-pointer">Don't have an account? <span className="text-base font-bold leading-6 text-[#4361EE]">Create an account</span></Link>
                            </div>
                         </div>
                     </form>
