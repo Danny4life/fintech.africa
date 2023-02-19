@@ -1,10 +1,10 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import img from "../../assets/signup-image.jpg";
 
 
 const Login = () => {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     return ( 
         <section>
              <section className="lg:flex">
@@ -59,7 +59,7 @@ const Login = () => {
                             <button 
                             className="w-[20rem] mb-8 
                             text-base font-bold text-[#FFFFFF] leading-4 lg:w-[24.688rem] h-[3rem] bg-[#4361EE] rounded-md py-2 px-2"
-                            onClick={() => navigate("#")}
+                            
                             >
                                 Login
                             </button>

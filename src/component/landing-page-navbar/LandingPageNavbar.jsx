@@ -26,7 +26,7 @@ const LandingPageNavbar = () => {
                         <Link to="/" className="contact">
                             <li>Contact Us</li>
                         </Link>
-                        <Link to="/" className="login">
+                        <Link to="/login" className="login">
                             <li>Login</li>
                         </Link>
                         <Link to="/signup" className="account">

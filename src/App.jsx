@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Dashboard from "./pages/dashboard/Dashboard"
 import EmailVerification from "./pages/email-verification/EmailVerification"
 import Homepage from "./pages/landing-page/Homepage"
 import Login from "./pages/login/Login"
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/login"  element={<Login />}/>
         <Route exact path="/password-reset"  element={<PasswordReset />}/>
         <Route exact path="/password-reset-verification"  element={<PasswordResetVerification />}/>
+        <Route exact path="/dashboard"  element={<Dashboard />}/>
       </Routes>
       </BrowserRouter>
       
