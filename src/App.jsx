@@ -21,7 +21,6 @@ function App() {
         <Route exact path="/password-reset"  element={<PasswordReset />}/>
         <Route exact path="/password-reset-verification"  element={<PasswordResetVerification />}/>
         <Route exact path="/dashboard"  element={<Dashboard />}/>
-       
       </Routes>
       </BrowserRouter>
       

@@ -1,46 +1,48 @@
-import { Link } from "react-router-dom";
-import Setting from "../../svg/Setting";
-import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import { useState } from "react";
+ import img1 from "../../assets/Notification.png";
 import img from "../../assets/samuel.jpg";
+import { Link } from "react-router-dom";
+import SettingsIcon from '@mui/icons-material/Settings';
+import "./topbar.css"
 
 const Topbar = () => {
 
-
-
+    const [isMobile, setIsMobile] = useState(false);
     return ( 
-        <>
-      
-            <nav className="">
-            <header className="w-[1440px] h-[97px] bg-[#F5F5F5]">
-                <div className="non-italic">
-                    <div className="lg:pt-6 pt-8 lg:flex lg:justify-between">
-                        <Link to={"/"}>
-                            <h1 className="
-                                text-3xl lg:ml-24 lg:px-10 font-bold leading-9 text-[#012A4A]">
-                                Fintech.africa
-                            </h1>
-                        </Link> 
-
-                        <div className="lg:flex items-center hidden lg:mr-24 px-10 gap-4 cursor-pointer">
-                            <Setting />
-                            <NotificationsNoneIcon />
-                            <div className="flex items-center gap-3">
+        <section>
+            <nav className="nav-container">
+                <header className="navbar1 nav2">
+                    <Link to={"/"} className="nav-logo">Fintech.africa</Link>
+                    <ul 
+                    className={isMobile ? "heroLinks" : "nav-links hero"}
+                    onClick={() => setIsMobile(false)}
+                    >
+                        <div className="nav-home">
+                            <li> <SettingsIcon /></li>
+                        </div>
+                        <div className="nav-feature">
+                        <img src={img1} alt="bell" />
+                        </div>
+                        <div className="flex items-center gap-3">
                                 <img 
                                     src={img} alt="samuel" 
                                     className="w-[42px] h-[42px] rounded-[50%] bg-[#D9D9D9] object-cover" 
                                 />
                                 <span className="text-base font-medium leading-5 text-[#012A4A]">Samuel</span>
                             </div>
-                            
-                        </div>
-                    </div>  
-                                   
-                </div>
+                    </ul>
 
-            </header>
-        </nav>  
-        </> 
-        
+                    <button 
+                    className="mobile-menu-icon"
+                    type="button"
+                    onClick={() => setIsMobile(!isMobile)}
+                    >
+                    {isMobile ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
+
+                    </button>
+                </header>
+            </nav>
+        </section>
      );
 }
  
