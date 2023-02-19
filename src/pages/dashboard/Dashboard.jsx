@@ -1,10 +1,18 @@
-import DashboardPage from "../../component/dashboard-component/DashboardPage";
+import Topbar from "../../component/dashboard-component/Topbar";
+import Wallet from "../../component/dashboard-component/Wallet";
 
 const Dashboard = () => {
     return ( 
-        <div>
-            <DashboardPage />
-        </div>
+        <section className="">
+         <nav className="">
+            <Topbar />
+        </nav>
+        <section>
+            <Wallet />
+        </section>
+
+        </section>
+       
      );
 }
  
