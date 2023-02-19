@@ -1,10 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import img from "../../assets/signup-image.jpg";
 
 
 const Login = () => {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        navigate("/dashboard");
+    }
+
     return ( 
         <section>
              <section className="lg:flex">
@@ -21,7 +28,7 @@ const Login = () => {
                             Hi, Welcome Back
                         </h1>
                     </div>
-                    <form action="/" method="/">
+                    <form action="/" method="/" onSubmit={handleSubmit}>
                         <div className="non-italic">
                             <div className="lg:ml-48 ml-6">
                                 <label htmlFor="email" className="block text-base font-medium text-[#000000] leading-6 mb-2">
@@ -56,7 +63,8 @@ const Login = () => {
                                 </Link>
                             </div>                     
                            <div className="lg:ml-48 non-italic ml-6">
-                            <button 
+                            <button
+                            type="submit" 
                             className="w-[20rem] mb-8 
                             text-base font-bold text-[#FFFFFF] leading-4 lg:w-[24.688rem] h-[3rem] bg-[#4361EE] rounded-md py-2 px-2"
                             
