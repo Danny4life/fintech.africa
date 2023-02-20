@@ -3,27 +3,33 @@
 }
 
 input {
-    padding: 15px;
+   
     margin: 10px 0px;
     border-radius: 6px;
     border: 1px solid #000000;
-    width: 395px;
     height: 48px;
+    /* width: 395px; */
+    
     background: #FFFFFF;
     opacity: 0.8;  
-    margin-bottom: 2rem;
     
 }
+
+input:placeholder-shown {
+    border-color: none;
+    padding: 1rem;
+    
+  }
  
 .formInput {
     display: flex;
     flex-direction: column;
     /* width: 280px; */
+    width: 395px;
     margin-left: 12rem;
     font-family: 'Inter';
     font-style: normal;
-    
-   
+    margin-bottom: 0.5rem;   
 }
 
 label {
@@ -39,7 +45,9 @@ span {
     padding: 3px;
     color: red;
     display: none;
+    font-weight: 400;
 }
+
 
 input:invalid[focused="true"]{
     border: 1px solid red;

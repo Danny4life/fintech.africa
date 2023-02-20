@@ -136,7 +136,7 @@ const inputs = [
                     <form action="/" method="/" onSubmit={handleSubmit}>
 
                         {inputs.map((input) => (
-                            <FormInput key={input.id} {...input} values={user[input.name]}
+                            <FormInput key={input.id} {...input}  values={user[input.name]}
                             onChange={onChange} />
                         ))}
                          <div className="non-italic">
@@ -246,7 +246,7 @@ const inputs = [
                             </div> */}
                            <div className="lg:ml-48 non-italic ml-6">
                             <button 
-                            className="w-[18rem] mb-8 
+                            className="w-[18rem] mb-12 mt-10  
                             text-base font-bold text-[#FFFFFF] leading-4 lg:w-[24.688rem] h-[3rem] bg-[#4361EE] rounded-md py-2 px-2"
                             onClick={() => navigate("/email-verification")}
                             >
@@ -254,7 +254,9 @@ const inputs = [
                             </button>
                            </div>
                            <div className="lg:ml-48 ml-6">
-                             <Link to="/login" className="text-base font-normal text-[#000000] leading-6 cursor-pointer">Already have an account? Login</Link>
+                             <Link to="/login" className="text-base font-normal text-[#000000] leading-6 cursor-pointer">
+                                Already have an account? <a className="font-bold">Login</a>
+                            </Link>
                            </div>
                         </div> 
 

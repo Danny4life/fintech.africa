@@ -1,16 +1,54 @@
 import { Link, useNavigate } from "react-router-dom";
 import img from "../../assets/signup-image.jpg";
+import FormInput from "../../component/formInput/FormInput";
+import { useState } from "react";
 
 
 const Login = () => {
 
     const navigate = useNavigate();
 
+    const [user, setUser] = useState({
+
+        email : "",
+        password : "",
+        
+    });
+
+    const inputs = [      
+          {
+            id : 1,
+            name : "email",
+            type : "email",
+            placeholder : "Enter your email",
+            errorMessage : "it should be a valid email address!",
+            label : "Email",
+            required: true,
+          },
+    
+          {
+            id : 2,
+            name : "password",
+            type : "password",
+            placeholder : "Password",
+            errorMessage : "Password should be 8-20 characters and includes atleast 1 letter, 1 number, and 1 special character",
+            label : "Password",
+            pattern :`^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+            required: true,
+          }, 
+    ]
+    
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
         navigate("/dashboard");
     }
+
+    const onChange = (e) => {
+        setUser({...user, [e.target.name]: e.target.value});
+        
+      }
 
     return ( 
         <section>
@@ -30,7 +68,12 @@ const Login = () => {
                     </div>
                     <form action="/" method="/" onSubmit={handleSubmit}>
                         <div className="non-italic">
-                            <div className="lg:ml-48 ml-6">
+                            {inputs.map((input) => (
+
+                                <FormInput  key={input.id} {...input}  values={user[input.name]}
+                                onChange={onChange} />
+                            ))}
+                            {/* <div className="lg:ml-48 ml-6">
                                 <label htmlFor="email" className="block text-base font-medium text-[#000000] leading-6 mb-2">
                                     Email
                                 </label>
@@ -42,8 +85,8 @@ const Login = () => {
                                 className="w-[20rem] text-base text-[#C4C4C4] font-light leading-6 mb-4
                                 lg:w-[24.688rem] h-[3rem] bg-[#FFFFFF] border-[#000000] rounded-md opacity-80 py-2 px-2 border"
                                 />
-                            </div>
-                            <div className="lg:ml-48 ml-6">
+                            </div> */}
+                            {/* <div className="lg:ml-48 ml-6">
                                 <label htmlFor="password" className="block text-base font-medium text-[#000000] leading-6 mb-2">
                                     Password
                                 </label>
@@ -55,7 +98,7 @@ const Login = () => {
                                 className="w-[20rem] text-base text-[#C4C4C4] font-light leading-6 mb-4
                                 lg:w-[24.688rem] h-[3rem] bg-[#FFFFFF] border-[#000000] rounded-md opacity-80 py-2 px-2 border"
                                 />
-                            </div>
+                            </div> */}
                             <div className="mb-6">
                                 <Link to="/password-reset" className="ml-6
                                     lg:ml-48 text-base font-normal text-[#4285F4] leading-6">
@@ -73,7 +116,7 @@ const Login = () => {
                             </button>
                            </div>
                            <div className="lg:ml-48 ml-6">
-                             <Link to="/signup" className="text-base font-normal text-[#000000] leading-6 cursor-pointer">Don't have an account? <span className="text-base font-bold leading-6 text-[#4361EE]">Create an account</span></Link>
+                             <Link to="/signup" className="text-base font-normal text-[#000000] leading-6 cursor-pointer">Don't have an account? <a className="text-base font-bold leading-6 text-[#4361EE]">Create an account</a></Link>
                            </div>
                         </div>
                     </form>
