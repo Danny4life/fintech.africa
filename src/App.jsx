@@ -5,6 +5,7 @@ import Homepage from "./pages/landing-page/Homepage"
 import Login from "./pages/login/Login"
 import PasswordReset from "./pages/password-reset-verification/PasswordReset"
 import PasswordResetVerification from "./pages/password-reset-verification/PasswordResetVerification"
+import ResetPassword from "./pages/reset-password/ResetPassword"
 import Signup from "./pages/signup/Signup"
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/password-reset"  element={<PasswordReset />}/>
         <Route exact path="/password-reset-verification"  element={<PasswordResetVerification />}/>
         <Route exact path="/dashboard"  element={<Dashboard />}/>
+        <Route exact path="/reset-password"  element={<ResetPassword />}/>
       </Routes>
       </BrowserRouter>
       
