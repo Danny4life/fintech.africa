@@ -28,7 +28,7 @@ const LocalTransferDetails = () => {
                 </div>
                
                 <div className="flex-1 pt-8">
-                    <span className="lg:text-lg font-bold text-[#012A4A]"><Link to={"/profile"}>Other Bank Transfer</Link></span>
+                    <span className="lg:text-lg font-bold text-[#012A4A]"><Link to={"/other-bank-transfer"}>Other Bank Transfer</Link></span>
                 </div>
             </div> 
 
