@@ -2,9 +2,13 @@
 import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Wallet = () => {
+
+    const navigate = useNavigate();
+
+
     return ( 
         <section className="h-screen bg-[#E5E5E5] non-italic">
             <section>
@@ -40,12 +44,16 @@ const Wallet = () => {
                 <div className='flex justify-center pt-8'>
                     <div className='w-[820px] border-solid border border-[#012A4A] h-[100px]'>
                         <div className='flex justify-center items-center pt-6 gap-10 text-[#012A4A]'>
-                            <div className='w-[102px] lg:w-[204px] h-[51px] bg-violet-300 flex justify-center items-center cursor-pointer'>
-                                <Link to={"/local-bank-transfer"}>Transfer</Link>
+                            <div
+                            onClick={() => navigate("/local-bank-transfer")} 
+                            className='w-[102px] lg:w-[204px] h-[51px] bg-violet-300 flex justify-center items-center cursor-pointer'>
+                                <Link to={"#"}>Transfer</Link>
                             </div>
-                            <div className=
+                            <div 
+                            onClick={() => navigate("/profile")} 
+                            className=
                             'lg:w-[204px] w-[102px] h-[51px] bg-[#E5E5E5] flex justify-center items-center border-solid border border-[#012A4A] cursor-pointer'>
-                                <Link to={"/profile"}>Profile</Link>
+                                <Link to={"#"}>Profile</Link>
                             </div>
                         </div>
                     </div>

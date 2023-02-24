@@ -2,9 +2,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Dashboard from "./pages/dashboard/Dashboard"
 import EmailVerification from "./pages/email-verification/EmailVerification"
 import Homepage from "./pages/landing-page/Homepage"
+import LocalTrasnfer from "./pages/local-bank-transfer/LocalTransfer"
 import Login from "./pages/login/Login"
 import PasswordReset from "./pages/password-reset-verification/PasswordReset"
 import PasswordResetVerification from "./pages/password-reset-verification/PasswordResetVerification"
+import UserProfile from "./pages/profile/UserProfile"
 import ResetPassword from "./pages/reset-password/ResetPassword"
 import Signup from "./pages/signup/Signup"
 
@@ -23,6 +25,8 @@ function App() {
         <Route exact path="/password-reset-verification"  element={<PasswordResetVerification />}/>
         <Route exact path="/dashboard"  element={<Dashboard />}/>
         <Route exact path="/reset-password"  element={<ResetPassword />}/>
+        <Route exact path="/local-bank-transfer"  element={<LocalTrasnfer />}/>
+        <Route exact path="/profile"  element={<UserProfile />}/>
       </Routes>
       </BrowserRouter>
       
