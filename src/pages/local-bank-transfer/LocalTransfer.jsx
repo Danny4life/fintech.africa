@@ -1,7 +1,14 @@
+import Topbar from "../../component/dashboard-component/Topbar";
+
 const LocalTrasnfer = () => {
     return ( 
 
-        <div>hello</div>
+        <section>
+            <nav>
+                <Topbar />
+            </nav>
+            
+        </section>
      );
 }
  
