@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Wallet = () => {
     return ( 
-        <section className="h-screen bg-[#E5E5E5]">
+        <section className="h-screen bg-[#E5E5E5] non-italic">
             <section>
                 <div className="flex justify-center items-center pt-16">
                     <div className="w-[820px] h-[206px] bg-[#FFFFFF]">
@@ -59,6 +59,11 @@ const Wallet = () => {
                         type="text" 
                         placeholder='Search Transactions' />
                        
+                    </div>
+                </div>   
+                 <div className='flex justify-center pt-6'>
+                    <div className='w-[820px] h-[48px] bg-[#C4C4C4] flex items-center'>
+                        <span className='ml-2 text-base font-medium leading-5 text-[#012A4A]'>Transaction history</span>
                     </div>
                 </div>            
             </section>
