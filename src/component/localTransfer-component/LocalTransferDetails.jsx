@@ -7,7 +7,7 @@ const LocalTransferDetails = () => {
     const navigate = useNavigate();
 
     return ( 
-        <section>
+        <section className="h-screen bg-[#E5E5E5] non-italic">
             <div 
             onClick={() => navigate("/dashboard")}
             className="ml-6 gap-2 non italic flex lg:ml-72 lg:pt-16 lg:px-1 lg:gap-4 cursor-pointer">
@@ -31,6 +31,12 @@ const LocalTransferDetails = () => {
                     <span className="lg:text-lg font-bold text-[#012A4A]"><Link to={"#"}>Other Bank Transfer</Link></span>
                 </div>
             </div> 
+
+            <section className="flex justify-center items-center pt-8">
+                <form action="" className="w-[860px] lg:h-[503px] h-[450px] bg-[#FFFFFF]">
+
+                </form>
+            </section>
             
         </section>
      );
