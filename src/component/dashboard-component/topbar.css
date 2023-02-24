@@ -5,7 +5,9 @@
 }
 
 .nav-container {
-    position: relative;
+    /* position: relative; */
+    position: fixed;
+    top: 0;
 }
 
 .navbar1 {
@@ -18,8 +20,8 @@
     background: #F5F5F5;
     color: #012A4A;
     /* position: absolute; */
-    /* top: 0;   */
-    /* position: fixed; */
+    /* top: 0;  
+    position: fixed; */
     /* z-index: 1; */
     
 }
@@ -83,6 +85,10 @@
             left: 35px;
             margin-left: -0.5rem;
            
+        }
+
+        .nav-container{
+            position: relative;
         }
 
         .navbar1 {

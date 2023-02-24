@@ -7,14 +7,14 @@ const LocalTransferDetails = () => {
     const navigate = useNavigate();
 
     return ( 
-        <section className="h-screen bg-[#E5E5E5] non-italic">
+        <section className="h-max bg-[#E5E5E5] non-italic">
             <div 
             onClick={() => navigate("/dashboard")}
             className="ml-6 gap-2 non italic flex lg:ml-72 lg:pt-10 lg:px-1 lg:gap-4 cursor-pointer pt-6">
-                <span>
+                <span className="lg:pt-20">
                     <Arrow />
                 </span>
-                <span className="text-base font-medium text-[#012A4A] leading-5">Go back</span>
+                <span className="text-base font-medium text-[#012A4A] leading-5 lg:pt-20">Go back</span>
             </div>
             <div className='flex justify-center pt-8'>
                 <div className='w-[860px] h-[54px] bg-[#C4C4C4] flex justify-center items-center'>

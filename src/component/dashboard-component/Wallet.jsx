@@ -12,7 +12,7 @@ const Wallet = () => {
     return ( 
         <section className="h-screen bg-[#E5E5E5] non-italic">
             <section>
-                <div className="flex justify-center items-center pt-16">
+                <div className="flex justify-center items-center lg:pt-36">
                     <div className="w-[820px] h-[206px] bg-[#FFFFFF]">
                         <div className="flex justify-center items-center">
                             <div className="flex-none justify-center items-center pt-16">
