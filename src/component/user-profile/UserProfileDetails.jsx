@@ -2,12 +2,15 @@ import { Link, useNavigate } from "react-router-dom";
 import Arrow from "../../svg/Arrow";
 import Line from "../../svg/Line";
 
-const LocalTransferDetails = () => {
+
+
+const UserProfileDetails = () => {
 
     const navigate = useNavigate();
 
     return ( 
         <section className="h-screen bg-[#E5E5E5] non-italic">
+
             <div 
             onClick={() => navigate("/dashboard")}
             className="ml-6 gap-2 non italic flex lg:ml-72 lg:pt-10 lg:px-1 lg:gap-4 cursor-pointer pt-6">
@@ -109,4 +112,4 @@ const LocalTransferDetails = () => {
      );
 }
  
-export default LocalTransferDetails;
+export default UserProfileDetails;
