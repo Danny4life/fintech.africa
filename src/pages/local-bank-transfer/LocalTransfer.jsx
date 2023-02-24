@@ -1,4 +1,5 @@
 import Topbar from "../../component/dashboard-component/Topbar";
+import LocalTransferDetails from "../../component/localTransfer-component/LocalTransferDetails";
 
 const LocalTrasnfer = () => {
     return ( 
@@ -7,6 +8,9 @@ const LocalTrasnfer = () => {
             <nav>
                 <Topbar />
             </nav>
+            <section>
+                <LocalTransferDetails />
+            </section>
             
         </section>
      );
