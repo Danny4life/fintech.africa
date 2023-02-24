@@ -1,6 +1,7 @@
 
 import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import { Link } from 'react-router-dom';
 
 const Wallet = () => {
@@ -29,14 +30,14 @@ const Wallet = () => {
                                 </div>
                             </div>
                             <div className="flex-1]">
-                                <span className='flex justify-end items-center lg:mr-8 pt-12 cursor-pointer'>
+                                <span className='flex justify-end items-center mr-6 lg:mr-8 pt-12 cursor-pointer'>
                                     <VisibilityOutlinedIcon />
                                 </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <section className='flex justify-center pt-8'>
+                <div className='flex justify-center pt-8'>
                     <div className='w-[820px] border-solid border border-[#012A4A] h-[100px]'>
                         <div className='flex justify-center items-center pt-6 gap-10 text-[#012A4A]'>
                             <div className='w-[102px] lg:w-[204px] h-[51px] bg-violet-300 flex justify-center items-center cursor-pointer'>
@@ -48,7 +49,18 @@ const Wallet = () => {
                             </div>
                         </div>
                     </div>
-                </section>              
+                </div>  
+                <div>
+                    <div className='flex justify-center pt-6 relative'>
+                         <span className='absolute left-80 bottom-3 hidden lg:flex'><SearchOutlinedIcon /></span>
+                        <input 
+                        className='lg:placeholder:px-6 lg:py-6 lg:px-12 py-2 px-2 text-base font-normal text-[#C4C4C4]
+                        w-[820px] h-[48px] border border-[#C4C4C4] bg-[#FFFFFF] rounded-md' 
+                        type="text" 
+                        placeholder='Search Transactions' />
+                       
+                    </div>
+                </div>            
             </section>
            
         </section>
