@@ -1,8 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import Arrow from "../../svg/Arrow";
 import Line from "../../svg/Line";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import BankModal from "../bankModal/BankModal";
+// import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+// import BankModal from "../bankModal/BankModal";
 
 
 const OtherBankTransferDetails = () => {
@@ -55,16 +55,12 @@ const OtherBankTransferDetails = () => {
                     name="accountNumber" 
                     placeholder="Account number"
                     className="leading-5 lg:bg-[#FFFFFF] w-[330px]
-                    lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium"
+                    lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] rounded-none ml-6 py-2 px-2 lg:text-base text-sm font-medium"
                     required 
                     />
                 </div>
                
-                <div className="pt-6 relative">
-                <span className="
-                    absolute top-[53.67%] right-[10%] lg:left-[92.77%] bottom-[37.5%] text-[#000000]">
-                    <ArrowDropDownIcon />
-                </span>
+                {/* <div className="pt-6 relative">
                     <label htmlFor="select" 
                     className="text-base font-medium leading-5 text-[#012A4A] ml-6 block">
                         Select Bank
@@ -78,16 +74,19 @@ const OtherBankTransferDetails = () => {
                         lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium"
                         required 
                         />
+                         <span className="sticky top-80 left-[900px] right-[330px]">
+                            <ArrowDropDownIcon />
+                        </span>
 
                         <BankModal />
                     </div>
                    
-                </div>
-                {/* <div>
+                </div> */}
+                <div>
                     <label htmlFor="select" className="text-base font-medium leading-5 text-[#012A4A] ml-6 block pt-1">Select</label>
                     <select className="leading-5 lg:bg-[#FFFFFF] w-[330px] cursor-pointer text-[#012A4A]
-                    lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium">
-                        <option value="select" className="hidden text-red-600">Select Bank</option>
+                    lg:w-[810px] lg:h-[48px] h-[35px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium">
+                        <option value="select" className="hidden">Select Bank</option>
                         <option value="select" className="">First Bank</option>
                         <option value="select" className="">GTB</option>
                         <option value="select" className="">Polaris Bank</option>
@@ -95,7 +94,7 @@ const OtherBankTransferDetails = () => {
                         <option value="select" className="">GTB</option>
                         <option value="select" className="">Polaris Bank</option>
                     </select>
-                </div> */}
+                </div>
                
                 <div className="pt-4">
                     <label htmlFor="amount" 
@@ -106,7 +105,7 @@ const OtherBankTransferDetails = () => {
                     type="number" 
                     name="amount" 
                     placeholder="Amount"
-                    className="leading-5 lg:bg-[#FFFFFF] w-[330px]
+                    className="leading-5 lg:bg-[#FFFFFF] w-[330px] rounded-none
                     lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium"
                     required 
                     />
@@ -121,7 +120,7 @@ const OtherBankTransferDetails = () => {
                     type="number" 
                     name="pin" 
                     placeholder="pin"
-                    className="leading-5 lg:bg-[#FFFFFF] w-[330px]
+                    className="leading-5 lg:bg-[#FFFFFF] w-[330px] rounded-none
                     lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium" 
                     required
                     />

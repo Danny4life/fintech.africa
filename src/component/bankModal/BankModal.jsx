@@ -1,6 +1,8 @@
 const BankModal = () => {
     return ( 
-        <div>modal</div>
+        <div className="flex justify-center">
+            <div className="">modal</div>
+        </div>
      );
 }
  
