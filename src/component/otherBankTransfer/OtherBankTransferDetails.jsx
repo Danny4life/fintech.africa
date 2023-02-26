@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import Arrow from "../../svg/Arrow";
 import Line from "../../svg/Line";
-// import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+//import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 // import BankModal from "../bankModal/BankModal";
 
 
@@ -13,7 +13,7 @@ const OtherBankTransferDetails = () => {
     <section className="h-max bg-[#E5E5E5] non-italic">
 
         <div 
-            onClick={() => navigate("/dashboard")}
+            onClick={() => navigate("/local-bank-transfer")}
             className="ml-6 gap-2 non italic flex lg:ml-72 lg:pt-20 lg:px-1 lg:gap-4 cursor-pointer pt-6">
             <span className="lg:pt-20">
                 <Arrow />
@@ -60,12 +60,12 @@ const OtherBankTransferDetails = () => {
                     />
                 </div>
                
-                {/* <div className="pt-6 relative">
+                <div className="pt-6 relative">
                     <label htmlFor="select" 
                     className="text-base font-medium leading-5 text-[#012A4A] ml-6 block">
                         Select Bank
                     </label>
-                    <div>
+                    {/* <div>
                         <input 
                         type="text" 
                         name="select" 
@@ -74,14 +74,14 @@ const OtherBankTransferDetails = () => {
                         lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium"
                         required 
                         />
-                         <span className="sticky top-80 left-[900px] right-[330px]">
+                         <span className="sticky top-80 left-[900px] right-[330px] cursor-pointer">
                             <ArrowDropDownIcon />
                         </span>
 
                         <BankModal />
-                    </div>
+                    </div> */}
                    
-                </div> */}
+                </div>
                 <div>
                     <label htmlFor="select" className="text-base font-medium leading-5 text-[#012A4A] ml-6 block pt-1">Select</label>
                     <select className="leading-5 lg:bg-[#FFFFFF] w-[330px] cursor-pointer text-[#012A4A]

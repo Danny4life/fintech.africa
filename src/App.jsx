@@ -7,6 +7,7 @@ import Login from "./pages/login/Login"
 import OtherBankTransfer from "./pages/other-bank-transfer/OtherBankTransfer"
 import PasswordReset from "./pages/password-reset-verification/PasswordReset"
 import PasswordResetVerification from "./pages/password-reset-verification/PasswordResetVerification"
+import UserProfile from "./pages/profile/UserProfile"
 //import UserProfile from "./pages/profile/UserProfile"
 import ResetPassword from "./pages/reset-password/ResetPassword"
 import Signup from "./pages/signup/Signup"
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/reset-password"  element={<ResetPassword />}/>
         <Route exact path="/local-bank-transfer"  element={<LocalTrasnfer />}/>
         <Route exact path="/other-bank-transfer"  element={<OtherBankTransfer />}/>
+        <Route exact path="/profile"  element={<UserProfile />}/>
       </Routes>
       </BrowserRouter>
       
