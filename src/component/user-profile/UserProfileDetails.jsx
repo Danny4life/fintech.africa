@@ -23,7 +23,7 @@ const UserProfileDetails = () => {
             </div>
         </div> 
         <section className="flex justify-center items-center pt-8 non-italic">
-                <form action="" className="w-[860px] lg:h-[622px] h-[420px] bg-[#FFFFFF]">
+                <form action="" className="w-[860px] lg:h-[622px] h-[480px] bg-[#FFFFFF]">
                     <div className="pt-6">
                         <label htmlFor="firstname" 
                         className="text-base font-medium leading-5 text-[#012A4A] ml-6 block">
@@ -94,7 +94,7 @@ const UserProfileDetails = () => {
                         required
                         />
                     </div>
-                    <div className="non-italic ml-6 lg:pt-10">
+                    <div className="non-italic ml-6 lg:pt-10 pt-6">
                         <button 
                             type="button"
                             className="w-[330px] h-[35px] text-sm cursor-not-allowed
