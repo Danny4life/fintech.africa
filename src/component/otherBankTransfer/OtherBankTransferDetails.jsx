@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Arrow from "../../svg/Arrow";
 import Line from "../../svg/Line";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import BankModal from "../bankModal/BankModal";
 
 
 const OtherBankTransferDetails = () => {
@@ -35,7 +36,7 @@ const OtherBankTransferDetails = () => {
             </div>
            
             <div className="flex-1 pt-8 flex justify-center lg:flex-col lg:mr-36">
-                <span className="lg:text-lg font-bold text-[#435FEC] lg:flex lg:justify-center lg:mr-60">
+                <span className="lg:text-lg font-bold text-[#435FEC] lg:flex lg:justify-center lg:mr-52">
                     <Link to={"/other-bank-transfer"}>Other Bank Transfer</Link>
                 </span>
                 <div className="hidden lg:flex lg:mr-[11.875rem]"><Line /></div>  
@@ -61,21 +62,26 @@ const OtherBankTransferDetails = () => {
                
                 <div className="pt-6 relative">
                 <span className="
-                    absolute top-[63.67%] right-[] left-[92.77%] bottom-[37.5%] text-[#000000]">
+                    absolute top-[53.67%] right-[10%] lg:left-[92.77%] bottom-[37.5%] text-[#000000]">
                     <ArrowDropDownIcon />
                 </span>
                     <label htmlFor="select" 
                     className="text-base font-medium leading-5 text-[#012A4A] ml-6 block">
                         Select Bank
                     </label>
-                    <input 
-                    type="text" 
-                    name="select" 
-                    placeholder="Select"
-                    className="leading-5 lg:bg-[#FFFFFF] w-[330px] cursor-pointer
-                    lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium"
-                    required 
-                    />
+                    <div>
+                        <input 
+                        type="text" 
+                        name="select" 
+                        placeholder="Select"
+                        className="leading-5 lg:bg-[#FFFFFF] w-[330px] cursor-pointer
+                        lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium"
+                        required 
+                        />
+
+                        <BankModal />
+                    </div>
+                   
                 </div>
                 {/* <div>
                     <label htmlFor="select" className="text-base font-medium leading-5 text-[#012A4A] ml-6 block pt-1">Select</label>
