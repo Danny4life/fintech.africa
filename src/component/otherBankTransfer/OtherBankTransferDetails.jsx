@@ -61,10 +61,10 @@ const OtherBankTransferDetails = () => {
                 </div>
                
                 <div className="pt-6 relative">
-                    <label htmlFor="select" 
+                    {/* <label htmlFor="select" 
                     className="text-base font-medium leading-5 text-[#012A4A] ml-6 block">
                         Select Bank
-                    </label>
+                    </label> */}
                     {/* <div>
                         <input 
                         type="text" 
