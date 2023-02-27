@@ -44,7 +44,7 @@ const LocalTransferDetails = () => {
                         name="accountNumber" 
                         placeholder="Account number"
                         className="leading-5 lg:bg-[#FFFFFF] w-[330px]
-                        lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium text-[#D9D9D9]"
+                        lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium"
                         required 
                         />
                     </div>
@@ -58,7 +58,7 @@ const LocalTransferDetails = () => {
                         name="amount" 
                         placeholder="Amount"
                         className="leading-5 lg:bg-[#FFFFFF] w-[330px]
-                        lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium text-[#D9D9D9]"
+                        lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium"
                         required 
                         />
                     </div>
@@ -72,7 +72,7 @@ const LocalTransferDetails = () => {
                         name="pin" 
                         placeholder="pin"
                         className="leading-5 lg:bg-[#FFFFFF] w-[330px]
-                        lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium text-[#D9D9D9]" 
+                        lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium" 
                         required
                         />
                     </div>
@@ -82,7 +82,7 @@ const LocalTransferDetails = () => {
                             Narration
                         </label>
                         <textarea 
-                        className=" mb-2 lg:text-base text-sm font-medium text-[#D9D9D9] w-[330px]
+                        className=" mb-2 lg:text-base text-sm font-medium w-[330px]
                         lg:w-[810px] lg:h-[134px] border border-[#D9D9D9] ml-6 py-2 px-2" 
                         name="narration" 
                         placeholder="Message"
