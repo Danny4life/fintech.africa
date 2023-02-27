@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Routes>
-        <Route index="/fintech.africa" element={<Homepage />}/>
+        <Route index="/" element={<Homepage />}/>
         <Route exact path="/signup"  element={<Signup />}/>
         <Route exact path="/email-verification"  element={<EmailVerification />}/>
         <Route exact path="/login"  element={<Login />}/>
