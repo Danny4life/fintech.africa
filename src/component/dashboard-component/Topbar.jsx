@@ -18,18 +18,18 @@ const Topbar = () => {
                     onClick={() => setIsMobile(false)}
                     >
                         <div className="nav-home">
-                            <li> <SettingsIcon /></li>
+                            <li> <SettingsIcon style={{ color: "#012A4A" }} /></li>
                         </div>
                         <div className="nav-feature">
                         <img src={img1} alt="bell" />
                         </div>
-                        <div className="flex items-center gap-3">
-                                <img 
-                                    src={img} alt="samuel" 
-                                    className="w-[42px] h-[42px] rounded-[50%] bg-[#D9D9D9] object-cover" 
-                                />
-                                <span className="text-base font-medium leading-5 text-[#012A4A]">Samuel</span>
-                            </div>
+                        <div className="flex items-center gap-3 avatar">
+                            <img 
+                                src={img} alt="samuel" 
+                                className="w-[42px] h-[42px] rounded-[50%] bg-[#D9D9D9] object-cover" 
+                            />
+                            <span className="text-base font-medium leading-5  text-[#012A4A]">Samuel</span>
+                        </div>
                     </ul>
 
                     <button 

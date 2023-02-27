@@ -95,7 +95,10 @@
             display: flex;
             justify-content: space-between;
             position: static;
-            width: 0;
+            /* width: 0; */
+            height: 96px;
+            width: 100%;
+            background: #F5F5F5;
             
         }
     
@@ -107,11 +110,12 @@
             display: block;
             position: absolute;
             list-style: none;
-            background-color: red;
+            background-color: blueviolet;
             left: 0;
             top: 75px;
             transition: all 0.5s ease-out;
             width: 100%;
+            
         }
     
     .nav-home,
@@ -123,7 +127,18 @@
         padding: 32px;
         width: 100%; 
         transition: all 0.5s ease;
-    
+    }
+
+    .nav-feature{
+        position: relative;
+        bottom: 20px;
+    }
+
+    .avatar {
+        display: flex;
+        justify-content: center;
+        margin-left: 5rem;
+       
     }
         
     .mobile-menu-icon {
