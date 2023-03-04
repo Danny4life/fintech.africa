@@ -13,7 +13,8 @@ const Topbar = () => {
 
     const navigate = useNavigate();
 
-   const Menus = ["Wallet", "Profile", "Transfer", "Logout"];
+ 
+   //const Menus = ["Wallet", "Profile", "Transfer", "Logout"];
     return ( 
         <section>
             <nav className="nav-container">
@@ -52,16 +53,36 @@ const Topbar = () => {
                     <div className="flex  justify-end mr-24 items-center cursor-pointer pt-2">
                     <div className="bg-white w-32 p-4 shadow-lg">
                         <ul>
-                            {
+                            {/* {
                                 Menus.map((menu) => (
                                     <li 
-                                    onClick={() => navigate("/")}
+                                    // onClick={() => navigate("/")}
                                     className="p-2 text-base text-[#012A4A] rounded hover:bg-blue-100" key={menu}>
-                                        {menu}
+                                        {menu.}
 
                                     </li>
                                 ))
-                            }
+                            } */}
+                            <li 
+                            onClick={() => navigate("/dashboard")} 
+                            className="p-2 text-base text-[#012A4A] rounded hover:bg-blue-100">
+                                Wallet
+                            </li>
+                            <li
+                            onClick={() => navigate("/profile")}  
+                            className="p-2 text-base text-[#012A4A] rounded hover:bg-blue-100">
+                                Profile
+                            </li>
+                            <li
+                            onClick={() => navigate("/local-bank-transfer")}  
+                            className="p-2 text-base text-[#012A4A] rounded hover:bg-blue-100">
+                                Transfer
+                            </li>
+                            <li
+                            onClick={() => navigate("/")}  
+                            className="p-2 text-base text-[#012A4A] rounded hover:bg-blue-100">
+                                Logout
+                            </li>
                         </ul>
                     </div>
 
