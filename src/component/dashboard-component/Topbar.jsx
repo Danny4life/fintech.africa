@@ -1,6 +1,6 @@
 import { useState } from "react";
  import img1 from "../../assets/Notification.png";
-import img from "../../assets/samuel.jpg";
+//import img from "../../assets/samuel.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import SettingsIcon from '@mui/icons-material/Settings';
 import "./topbar.css"
@@ -10,6 +10,8 @@ const Topbar = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     const [open, setOpen] = useState(false);
+
+    const [file, setFile] = useState("");
 
     
 
@@ -35,11 +37,27 @@ const Topbar = () => {
                         <div className="flex items-center gap-3 avatar cursor-pointer">
                             <img 
                                 onClick={() => setOpen(!open)}
-                                src={img} alt="samuel" 
+                                // src={img} alt="samuel" 
+                                src={file ? URL.createObjectURL(file) :
+                                "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"}
+                                alt="image"
+                                onChange={e => setFile(e.target.files[0])}
                                 className="w-[42px] h-[42px] rounded-[50%] bg-[#D9D9D9] object-cover" 
                             />
                            
-                            <span className="text-base font-medium leading-5  text-[#012A4A]">Samuel</span>
+                            {/* <span className="text-base font-medium leading-5  text-[#012A4A]">Samuel</span> */}
+                            <form action="">
+                                <label 
+                                htmlFor="file"
+                                className="text-base font-medium leading-5  text-[#012A4A] cursor-pointer"
+                                >
+                                    Samuel
+                                </label>
+                                <input type="file" id="file" 
+                                onChange={(e) => setFile(e.target.files[0])} style={{display: "none"}}
+                                
+                                 />
+                            </form>
                         </div>
                     </ul>
                     <button 
