@@ -41,10 +41,23 @@ const Topbar = () => {
                                 src={file ? URL.createObjectURL(file) :
                                 "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"}
                                 alt="image"
-                                className="w-[62px] h-[62px] rounded-[50%] bg-[#D9D9D9] object-cover" 
+                                onChange={e => setFile(e.target.files[0])}
+                                className="w-[42px] h-[42px] rounded-[50%] bg-[#D9D9D9] object-cover" 
                             />
                            
-                            <span className="text-base font-medium leading-5  text-[#012A4A]">Samuel</span>
+                            {/* <span className="text-base font-medium leading-5  text-[#012A4A]">Samuel</span> */}
+                            <form action="">
+                                <label 
+                                htmlFor="file"
+                                className="text-base font-medium leading-5  text-[#012A4A] cursor-pointer"
+                                >
+                                    Samuel
+                                </label>
+                                <input type="file" id="file" 
+                                onChange={(e) => setFile(e.target.files[0])} style={{display: "none"}}
+                                
+                                 />
+                            </form>
                         </div>
                     </ul>
                     <button 
