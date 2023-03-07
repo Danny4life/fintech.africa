@@ -11,6 +11,8 @@ const Topbar = () => {
 
     const [open, setOpen] = useState(false);
 
+    //const [openSettings, setOpenSettings] = useState(false);
+
     const [file, setFile] = useState("");
 
     
@@ -29,7 +31,12 @@ const Topbar = () => {
                     onClick={() => setIsMobile(false)}
                     >
                         <div className="nav-home">
-                            <li> <SettingsIcon style={{ color: "#012A4A" }} /></li>
+                            <li> 
+                                <SettingsIcon
+                                    // onClick={() => setOpenSettings(!openSettings)} 
+                                    style={{ color: "#012A4A" }} 
+                                />
+                            </li>
                         </div>
                         <div className="nav-feature">
                         <img src={img1} alt="bell" />
@@ -73,16 +80,6 @@ const Topbar = () => {
                     <div className="flex  justify-end mr-24 items-center cursor-pointer pt-2">
                     <div className="bg-white w-32 p-4 shadow-lg">
                         <ul>
-                            {/* {
-                                Menus.map((menu) => (
-                                    <li 
-                                    // onClick={() => navigate("/")}
-                                    className="p-2 text-base text-[#012A4A] rounded hover:bg-blue-100" key={menu}>
-                                        {menu.}
-
-                                    </li>
-                                ))
-                            } */}
                             <li 
                             onClick={() => navigate("/dashboard")} 
                             className="p-2 text-base text-[#012A4A] rounded hover:bg-blue-100">
@@ -98,6 +95,11 @@ const Topbar = () => {
                             className="p-2 text-base text-[#012A4A] rounded hover:bg-blue-100">
                                 Transfer
                             </li>
+                             <li
+                            onClick={() => navigate("/")}  
+                            className="p-2 text-base text-[#012A4A] rounded hover:bg-blue-100">
+                                Change Password
+                            </li>
                             <li
                             onClick={() => navigate("/")}  
                             className="p-2 text-base text-[#012A4A] rounded hover:bg-blue-100">
@@ -108,7 +110,6 @@ const Topbar = () => {
 
                     </div>
                 )}
-                
             </nav>
           
         </section>
