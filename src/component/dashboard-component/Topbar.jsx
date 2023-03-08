@@ -96,7 +96,7 @@ const Topbar = () => {
                                 Transfer
                             </li>
                              <li
-                            onClick={() => navigate("/")}  
+                            onClick={() => navigate("/reset-password")}  
                             className="p-2 text-base text-[#012A4A] rounded hover:bg-blue-100">
                                 Change Password
                             </li>

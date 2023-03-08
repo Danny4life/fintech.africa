@@ -17,10 +17,21 @@ const ResetPassword = () => {
     });
 
 
-    const inputs = [      
+    const inputs = [ 
+        
         {
-          id : 1,
-          name : "new password",
+            id : 1,
+            name : "password",
+            type : "password",
+            placeholder : "Password",
+            errorMessage : "Password should be 8-20 characters and includes atleast 1 letter, 1 number, and 1 special character",
+            label : "Current Password",
+            pattern :`^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+            required: true,
+          },
+        {
+          id : 2,
+          name : "password",
           type : "password",
           placeholder : "Password",
           errorMessage : "Password should be 8-20 characters and includes atleast 1 letter, 1 number, and 1 special character",
@@ -30,15 +41,15 @@ const ResetPassword = () => {
         },
   
         {
-          id : 2,
-          name : "confirm password",
+          id : 3,
+          name : "confirmpassword",
           type : "password",
-          placeholder : "Re-enter Password",
-          errorMessage : "Password should be 8-20 characters and includes atleast 1 letter, 1 number, and 1 special character",
+          placeholder : "Confirm Password",
+          errorMessage : "Password Don't Match",
           label : "Confirm Password",
-          pattern :`^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+          pattern : user.password,
           required: true,
-        }, 
+        }
   ]
   
 
