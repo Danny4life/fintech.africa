@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import img from "../../assets/signup-image.jpg";
 import FormInput from "../../component/formInput/FormInput";
+import UserService from "../../component/services/UserService";
 
 
 
@@ -9,9 +10,10 @@ const Signup = () => {
 
 const navigate = useNavigate();
 
-const [user, setUser] = useState({
-    firstname : "",
-    lastname : "",
+const [usersModel, setUsersModel] = useState({
+    id: "",
+    firstName : "",
+    lastName : "",
     email : "",
     phoneNumber: "",
     bvn : "",
@@ -24,23 +26,25 @@ const inputs = [
 
     {
         id : 1,
-        name : "firstname",
+        name : "firstName",
         type : "text",
         placeholder : "Enter your first name",
         errorMessage: "First name must be enter!",
         label : "First Name",
         pattern : "^[A-Za-z0-9]{3,16}$",
+        value : usersModel.firstName,
         required: true,
       },
 
       {
         id : 2,
-        name : "lastname",
+        name : "lastName",
         type : "text",
         placeholder : "Enter your last name",
         errorMessage: "Last name must be enter!",
         label : "Last Name",
         pattern : "^[A-Za-z0-9]{3,16}$",
+        value : usersModel.lastName,
         required: true,
       },
 
@@ -51,6 +55,7 @@ const inputs = [
         placeholder : "Enter your email",
         errorMessage : "it should be a valid email address!",
         label : "Email",
+        value : usersModel.email,
         required: true,
       },
 
@@ -61,6 +66,7 @@ const inputs = [
         placeholder : "Enter Phone number",
         errorMessage : "Enter digit number only!",
         label : "Phone Number",
+        value : usersModel.phoneNumber,
         required: true,
       },
 
@@ -71,6 +77,7 @@ const inputs = [
         placeholder : "Enter your BVN",
         errorMessage : "it should be a valid bvn number!",
         label : "BVN",
+        value : usersModel.bvn,
         required: true,
       },
 
@@ -82,6 +89,7 @@ const inputs = [
         errorMessage : "Password should be 8-20 characters and includes atleast 1 letter, 1 number, and 1 special character",
         label : "Password",
         pattern :`^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+        value : usersModel.password,
         required: true,
       },
 
@@ -92,7 +100,7 @@ const inputs = [
         placeholder : "Confirm Password",
         errorMessage : "password don't match!",
         label : "Confirm Password",
-        pattern : user.password,
+        pattern : usersModel.password,
         required: true,
       },
 
@@ -103,18 +111,32 @@ const inputs = [
         placeholder : "Enter transaction pin",
         errorMessage : "it should be a valid pin number!",
         label : "Pin",
+        value : usersModel.pin,
         required: true,
       }
 ]
 
-    const handleSubmit = (e) => {
-    e.preventDefault();
-    navigate("/email-verification");
-  }
+//     const handleSubmit = (e) => {
+//     e.preventDefault();
+    // navigate("/email-verification");
+//   }
 
   const onChange = (e) => {
-    setUser({...user, [e.target.name]: e.target.value});
+    setUsersModel({...usersModel, [e.target.name]: e.target.value});
     
+  }
+
+  const createUsersAccount = (e) => {
+    e.preventDefault();
+    UserService.createUsersAccount(usersModel).then((response) => {
+        setUsersModel(response);
+        navigate("/email-verification");
+        console.log(response);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+
   }
   
 
@@ -134,10 +156,10 @@ const inputs = [
                             Get Started with Fintech
                         </h1>
                     </div>
-                    <form action="/" method="/" onSubmit={handleSubmit}>
+                    <form action="/" method="/" onSubmit={createUsersAccount}>
 
                         {inputs.map((input) => (
-                            <FormInput key={input.id} {...input}  values={user[input.name]}
+                            <FormInput key={input.id} {...input}  values={usersModel[input.name]}
                             onChange={onChange} />
                         ))}
                          <div className="non-italic">
