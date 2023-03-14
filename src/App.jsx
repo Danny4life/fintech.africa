@@ -11,12 +11,20 @@ import UserProfile from "./pages/profile/UserProfile"
 //import UserProfile from "./pages/profile/UserProfile"
 import ResetPassword from "./pages/reset-password/ResetPassword"
 import Signup from "./pages/signup/Signup"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
 function App() {
   return (
     <div className="App">
+       <ToastContainer
+        autoClose={2000}
+        hideProgressBar={false}
+        position="top-right"
+        theme="dark" 
+       />
       <BrowserRouter>
       <Routes>
         <Route index="/" element={<Homepage />}/>

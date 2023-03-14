@@ -3,6 +3,8 @@ import img from "../../assets/signup-image.jpg";
 import FormInput from "../../component/formInput/FormInput";
 import { useState } from "react";
 import LoginService from "../../component/services/LoginService";
+import { toast } from 'react-toastify';
+
 
 
 const Login = () => {
@@ -53,11 +55,11 @@ const Login = () => {
             // console.log(response);
 
             if(response.data.message == "Email or password not match"){
-                alert("Email or password not match");
+                toast.error("Email or password not match");
             } else if(response.data.message == "Login successful"){
                 navigate("/dashboard");
             }else {
-                alert("Email does not exists");
+                toast.error("Email does not exists");
             }
         }, fail => {
             console.error(fail);
@@ -65,6 +67,7 @@ const Login = () => {
         .catch((error) => {
             console.log(error);
         })
+       
       }
 
     return ( 
