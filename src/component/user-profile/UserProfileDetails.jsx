@@ -1,10 +1,58 @@
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import Arrow from "../../svg/Arrow";
+import GetUser from "../services/GetUser";
 
 
 const UserProfileDetails = () => {
 
+    const {id} = useParams();
+
   const navigate = useNavigate();
+
+  const [usersModel, setUsersModel] = useState({
+   
+    id: "",
+    firstName : "",
+    lastName : "",
+    email : "",
+    phoneNumber: "",
+    bvn : "",
+    pin : "",
+  })
+
+  const onChange = (e) => {
+    setUsersModel({...usersModel, [e.target.name]: e.target.value});
+    
+  }
+
+  useEffect(() => {
+    const fetchData = async () => {
+
+        try {
+            const response = await GetUser.getUsersById(id);
+            setUsersModel(response.data);
+        }catch(error){
+            console.log(error);
+        }
+
+    }
+
+    fetchData();
+  }, [id])
+
+
+  const updateUser = (e) => {
+    e.preventDefault();
+    GetUser.updateUser(usersModel, id).then((response) => {
+        setUsersModel(response.data);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+
+  }
+
 
     return ( 
        <section className="h-max bg-[#E5E5E5] non-italic">
@@ -23,7 +71,7 @@ const UserProfileDetails = () => {
             </div>
         </div> 
         <section className="flex justify-center items-center pt-8 non-italic">
-                <form action="" className="w-[860px] lg:h-[622px] h-[480px] bg-[#FFFFFF]">
+                <form action="" className="w-[860px] lg:h-[622px] h-[480px] bg-[#FFFFFF]" onSubmit={updateUser}>
                     <div className="pt-6">
                         <label htmlFor="firstname" 
                         className="text-base font-medium leading-5 text-[#012A4A] ml-6 block">
@@ -31,8 +79,10 @@ const UserProfileDetails = () => {
                         </label>
                         <input 
                         type="text" 
-                        name="firstname" 
+                        name="firstName" 
                         placeholder="First name"
+                        value={usersModel.firstName}
+                        onChange={(e) => onChange(e)}
                         className="leading-5 lg:bg-[#FFFFFF] w-[330px] rounded-none 
                         lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium text-[#000000]"
                         required 
@@ -45,7 +95,9 @@ const UserProfileDetails = () => {
                         </label>
                         <input 
                         type="text" 
-                        name="lastname" 
+                        name="lastName" 
+                        value={usersModel.lastName}
+                        onChange={(e) => onChange(e)}
                         placeholder="Last name"
                         className="leading-5 lg:bg-[#FFFFFF] w-[330px] rounded-none
                         lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium text-[#000000]"
@@ -60,6 +112,8 @@ const UserProfileDetails = () => {
                         <input 
                         type="number" 
                         name="phoneNumber" 
+                        value={usersModel.phoneNumber}
+                        onChange={(e) => onChange(e)}
                         placeholder="Phone number"
                         className="leading-5 lg:bg-[#FFFFFF] w-[330px] rounded-none
                         lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium text-[#000000]" 
@@ -74,6 +128,8 @@ const UserProfileDetails = () => {
                         <input 
                         type="number" 
                         name="bvn" 
+                        value={usersModel.bvn}
+                        onChange={(e) => onChange(e)}
                         placeholder="BVN"
                         className="leading-5 lg:bg-[#FFFFFF] w-[330px] rounded-none
                         lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium text-[#000000]" 
@@ -88,6 +144,8 @@ const UserProfileDetails = () => {
                         <input 
                         type="email" 
                         name="email" 
+                        value={usersModel.email}
+                        onChange={(e) => onChange(e)}
                         placeholder="Email"
                         className="leading-5 lg:bg-[#FFFFFF] w-[330px] rounded-none
                         lg:w-[810px] lg:h-[48px] h-[30px] border border-[#D9D9D9] ml-6 py-2 px-2 lg:text-base text-sm font-medium text-[#000000]" 

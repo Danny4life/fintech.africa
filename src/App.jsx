@@ -37,7 +37,7 @@ function App() {
         <Route exact path="/reset-password"  element={<ResetPassword />}/>
         <Route exact path="/local-bank-transfer"  element={<LocalTrasnfer />}/>
         <Route exact path="/other-bank-transfer"  element={<OtherBankTransfer />}/>
-        <Route exact path="/profile"  element={<UserProfile />}/>
+        <Route exact path="/profile/:id"  element={<UserProfile />}/>
       </Routes>
       </BrowserRouter>
       

@@ -10,6 +10,11 @@ class GetUser {
 
     }
 
+    updateUser(usersModel, id){
+
+        return axios.put(GETUSER_API_URL + "/" + id, usersModel);
+
+    }
 }
 
 export default new GetUser();
