@@ -116,11 +116,6 @@ const inputs = [
       }
 ]
 
-//     const handleSubmit = (e) => {
-//     e.preventDefault();
-    // navigate("/email-verification");
-//   }
-
   const onChange = (e) => {
     setUsersModel({...usersModel, [e.target.name]: e.target.value});
     
@@ -139,7 +134,6 @@ const inputs = [
 
   }
   
-
     return ( 
         <section>
             <section className="lg:flex">
@@ -163,110 +157,6 @@ const inputs = [
                             onChange={onChange} />
                         ))}
                          <div className="non-italic">
-                            {/* <div className="lg:ml-48 ml-6">
-                                <label htmlFor="firstname" className="block text-base font-medium text-[#000000] leading-6 mb-2">
-                                    First Name
-                                </label>
-                                <input 
-                                type="text" 
-                                name="firstname"    
-                                placeholder="Enter your first name" 
-                                required 
-                                className="w-[18rem] text-base text-[#C4C4C4] font-light leading-6 mb-4
-                                lg:w-[24.688rem] h-[3rem] bg-[#FFFFFF] border-[#000000] rounded-md opacity-80 py-2 px-2 border"
-                                />
-                            </div> */}
-                            {/* <div className="lg:ml-48 ml-6">
-                                <label htmlFor="lastname" className="block text-base font-medium text-[#000000] leading-6 mb-2">
-                                    Last Name
-                                </label>
-                                <input 
-                                type="text" 
-                                name="lastname"    
-                                placeholder="Enter your last name" 
-                                required 
-                                className="w-[18rem] text-base text-[#C4C4C4] font-light leading-6 mb-4
-                                lg:w-[24.688rem] h-[3rem] bg-[#FFFFFF] border-[#000000] rounded-md opacity-80 py-2 px-2 border"
-                                />
-                            </div> */}
-                            {/* <div className="lg:ml-48 ml-6">
-                                <label htmlFor="email" className="block text-base font-medium text-[#000000] leading-6 mb-2">
-                                    Email
-                                </label>
-                                <input 
-                                type="email" 
-                                name="email"    
-                                placeholder="Enter your email" 
-                                required 
-                                className="w-[18rem] text-base text-[#C4C4C4] font-light leading-6 mb-4
-                                lg:w-[24.688rem] h-[3rem] bg-[#FFFFFF] border-[#000000] rounded-md opacity-80 py-2 px-2 border"
-                                />
-                            </div> */}
-                            {/* <div className="lg:ml-48 ml-6">
-                                <label htmlFor="phone" className="block text-base font-medium text-[#000000] leading-6 mb-2">
-                                    Phone Number
-                                </label>
-                                <input 
-                                type="number" 
-                                name="phone"    
-                                placeholder="Enter your number" 
-                                required 
-                                className="w-[18rem] text-base text-[#C4C4C4] font-light leading-6 mb-4
-                                lg:w-[24.688rem] h-[3rem] bg-[#FFFFFF] border-[#000000] rounded-md opacity-80 py-2 px-2 border"
-                                />
-                            </div> */}
-                            {/* <div className="lg:ml-48 ml-6">
-                                <label htmlFor="bvn" className="block text-base font-medium text-[#000000] leading-6 mb-2">
-                                    BVN
-                                </label>
-                                <input 
-                                type="number" 
-                                name="bvn"    
-                                placeholder="Enter your bvn" 
-                                required 
-                                className="w-[18rem] text-base text-[#C4C4C4] font-light leading-6 mb-4
-                                lg:w-[24.688rem] h-[3rem] bg-[#FFFFFF] border-[#000000] rounded-md opacity-80 py-2 px-2 border"
-                                />
-                            </div> */}
-                            {/* <div className="lg:ml-48 ml-6">
-                                <label htmlFor="password" className="block text-base font-medium text-[#000000] leading-6 mb-2">
-                                    Password
-                                </label>
-                                <input 
-                                type="password" 
-                                name="password"    
-                                placeholder="Enter your password" 
-                                required 
-                                className="w-[18rem] text-base text-[#C4C4C4] font-light leading-6 mb-4
-                                lg:w-[24.688rem] h-[3rem] bg-[#FFFFFF] border-[#000000] rounded-md opacity-80 py-2 px-2 border"
-                                />
-                            </div> */}
-                            {/* <div className="lg:ml-48 ml-6">
-                                <label htmlFor="confirmPassword" className="block text-base font-medium text-[#000000] leading-6 mb-2">
-                                    Confirm Password
-                                </label>
-                                <input 
-                                type="password" 
-                                name="password"    
-                                placeholder="Confirm your password" 
-                                required 
-                                className="w-[18rem] text-base text-[#C4C4C4] font-light leading-6 mb-4
-                                lg:w-[24.688rem] h-[3rem] bg-[#FFFFFF] border-[#000000] rounded-md opacity-80 py-2 px-2 border"
-                                />
-                            </div> */}
-                            {/* <div className="lg:ml-48 ml-6">
-                                <label htmlFor="pin" className="block text-base font-medium text-[#000000] leading-6 mb-2">
-                                    Pin
-                                </label>
-                                <input 
-                                type="number" 
-                                name="pin"    
-                                placeholder="Enter transaction pin" 
-                                required 
-                                className="w-[18rem] text-base text-[#C4C4C4] font-light leading-6 mb-8
-                                lg:w-[24.688rem] h-[3rem] bg-[#FFFFFF] border-[#000000] rounded-md opacity-80 py-2 px-2 border"
-                                />
-                            </div> */}
                            <div className="lg:ml-48 non-italic ml-6">
                             <button 
                             type="submit"

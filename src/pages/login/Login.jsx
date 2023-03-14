@@ -2,13 +2,14 @@ import { Link, useNavigate } from "react-router-dom";
 import img from "../../assets/signup-image.jpg";
 import FormInput from "../../component/formInput/FormInput";
 import { useState } from "react";
+import LoginService from "../../component/services/LoginService";
 
 
 const Login = () => {
 
     const navigate = useNavigate();
 
-    const [user, setUser] = useState({
+    const [loginModel, setLoginModel] = useState({
 
         email : "",
         password : "",
@@ -23,6 +24,7 @@ const Login = () => {
             placeholder : "Enter your email",
             errorMessage : "it should be a valid email address!",
             label : "Email",
+            value : loginModel.email,
             required: true,
           },
     
@@ -34,20 +36,35 @@ const Login = () => {
             errorMessage : "Password should be 8-20 characters and includes atleast 1 letter, 1 number, and 1 special character",
             label : "Password",
             pattern :`^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+            value : loginModel.password,
             required: true,
           }, 
     ]
     
-
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        navigate("/dashboard");
-    }
-
     const onChange = (e) => {
-        setUser({...user, [e.target.name]: e.target.value});
+        setLoginModel({...loginModel, [e.target.name]: e.target.value});
         
+      }
+
+      const loginUser = (e) => {
+        e.preventDefault();
+        LoginService.loginUser(loginModel).then((response) => {
+            setLoginModel(response);
+            // console.log(response);
+
+            if(response.data.message == "Email or password not match"){
+                alert("Email or password not match");
+            } else if(response.data.message == "Login successful"){
+                navigate("/dashboard");
+            }else {
+                alert("Email does not exists");
+            }
+        }, fail => {
+            console.error(fail);
+        })
+        .catch((error) => {
+            console.log(error);
+        })
       }
 
     return ( 
@@ -66,39 +83,13 @@ const Login = () => {
                             Hi, Welcome Back
                         </h1>
                     </div>
-                    <form action="/" method="/" onSubmit={handleSubmit}>
+                    <form action="/" method="/" onSubmit={loginUser}>
                         <div className="non-italic">
                             {inputs.map((input) => (
 
-                                <FormInput  key={input.id} {...input}  values={user[input.name]}
+                                <FormInput  key={input.id} {...input}  values={loginModel[input.name]}
                                 onChange={onChange} />
                             ))}
-                            {/* <div className="lg:ml-48 ml-6">
-                                <label htmlFor="email" className="block text-base font-medium text-[#000000] leading-6 mb-2">
-                                    Email
-                                </label>
-                                <input 
-                                type="email" 
-                                name="email"    
-                                placeholder="Enter your email" 
-                                required 
-                                className="w-[20rem] text-base text-[#C4C4C4] font-light leading-6 mb-4
-                                lg:w-[24.688rem] h-[3rem] bg-[#FFFFFF] border-[#000000] rounded-md opacity-80 py-2 px-2 border"
-                                />
-                            </div> */}
-                            {/* <div className="lg:ml-48 ml-6">
-                                <label htmlFor="password" className="block text-base font-medium text-[#000000] leading-6 mb-2">
-                                    Password
-                                </label>
-                                <input 
-                                type="password" 
-                                name="password"    
-                                placeholder="Enter your password" 
-                                required 
-                                className="w-[20rem] text-base text-[#C4C4C4] font-light leading-6 mb-4
-                                lg:w-[24.688rem] h-[3rem] bg-[#FFFFFF] border-[#000000] rounded-md opacity-80 py-2 px-2 border"
-                                />
-                            </div> */}
                             <div className="mb-6">
                                 <Link to="/password-reset" className="ml-6
                                     lg:ml-48 text-base font-normal text-[#4285F4] leading-6">
