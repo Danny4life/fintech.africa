@@ -10,6 +10,7 @@ const UserProfileDetails = () => {
 
   const navigate = useNavigate();
 
+
   const [usersModel, setUsersModel] = useState({
    
     id: "",
@@ -29,6 +30,7 @@ const UserProfileDetails = () => {
   useEffect(() => {
     const fetchData = async () => {
 
+
         try {
             const response = await GetUser.getUsersById(id);
             setUsersModel(response.data);
@@ -42,16 +44,16 @@ const UserProfileDetails = () => {
   }, [id])
 
 
-  const updateUser = (e) => {
-    e.preventDefault();
-    GetUser.updateUser(usersModel, id).then((response) => {
-        setUsersModel(response.data);
-    })
-    .catch((error) => {
-        console.log(error);
-    })
+//   const updateUser = (e) => {
+//     e.preventDefault();
+//     GetUser.updateUser(usersModel, id).then((response) => {
+//         setUsersModel(response.data);
+//     })
+//     .catch((error) => {
+//         console.log(error);
+//     })
 
-  }
+//   }
 
 
     return ( 
@@ -71,7 +73,7 @@ const UserProfileDetails = () => {
             </div>
         </div> 
         <section className="flex justify-center items-center pt-8 non-italic">
-                <form action="" className="w-[860px] lg:h-[622px] h-[480px] bg-[#FFFFFF]" onSubmit={updateUser}>
+                <form action="" className="w-[860px] lg:h-[622px] h-[480px] bg-[#FFFFFF]">
                     <div className="pt-6">
                         <label htmlFor="firstname" 
                         className="text-base font-medium leading-5 text-[#012A4A] ml-6 block">

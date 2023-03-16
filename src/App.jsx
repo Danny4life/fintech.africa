@@ -13,6 +13,7 @@ import ResetPassword from "./pages/reset-password/ResetPassword"
 import Signup from "./pages/signup/Signup"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import UserProfileDetails from "./component/user-profile/UserProfileDetails"
 
 
 
@@ -23,7 +24,7 @@ function App() {
         autoClose={2000}
         hideProgressBar={false}
         position="top-right"
-        theme="dark" 
+        theme="light" 
        />
       <BrowserRouter>
       <Routes>
@@ -37,7 +38,7 @@ function App() {
         <Route exact path="/reset-password"  element={<ResetPassword />}/>
         <Route exact path="/local-bank-transfer"  element={<LocalTrasnfer />}/>
         <Route exact path="/other-bank-transfer"  element={<OtherBankTransfer />}/>
-        <Route exact path="/profile/:id"  element={<UserProfile />}/>
+        <Route exact path="/saveUserProfile/:id"  element={<UserProfile />}/>
       </Routes>
       </BrowserRouter>
       

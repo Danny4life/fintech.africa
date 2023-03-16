@@ -2,20 +2,26 @@
 import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useState } from 'react';
+//import { useState } from 'react';
 
 const Wallet = () => {
 
+
+    const {id} = useParams();
+
+    // const [profile, setProfile] = useState(1);
+
     const navigate = useNavigate();
 
-    const[usersModel, setUsersModel] = useState(null);
 
-
-    const editUser = (e, id) => {
+    const handleClick = (e, id) => {
         e.preventDefault();
-        navigate(`/profile/${id}`);
+        navigate(`/saveUserProfile/${23}`);
+        
     }
+
 
 
     return ( 
@@ -58,11 +64,13 @@ const Wallet = () => {
                             className='w-[102px] lg:w-[204px] h-[51px] bg-violet-300 flex justify-center items-center cursor-pointer'>
                                 <Link to={"#"}>Transfer</Link>
                             </div>
-                            <div 
-                            onClick={(e, id) => editUser(e, usersModel.id)} 
+                            <div
+                            onClick={(e) => handleClick(e, id)}
                             className=
-                            'lg:w-[204px] w-[102px] h-[51px] bg-[#E5E5E5] flex justify-center items-center border-solid border border-[#012A4A] cursor-pointer'>
+                            'lg:w-[204px] w-[102px] h-[51px] bg-[#E5E5E5] flex justify-center items-center border-solid border border-[#012A4A] cursor-pointer'
+                            >
                                 <Link to={"#"}>Profile</Link>
+                            
                             </div>
                         </div>
                     </div>
