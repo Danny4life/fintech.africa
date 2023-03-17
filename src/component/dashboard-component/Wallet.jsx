@@ -18,7 +18,7 @@ const Wallet = () => {
 
     const handleClick = (e, id) => {
         e.preventDefault();
-        navigate(`/saveUserProfile/${23}`);
+        navigate(`/saveUserProfile/${id}`);
         
     }
 

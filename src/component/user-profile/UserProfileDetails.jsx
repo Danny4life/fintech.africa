@@ -73,7 +73,7 @@ const UserProfileDetails = () => {
             </div>
         </div> 
         <section className="flex justify-center items-center pt-8 non-italic">
-                <form action="" className="w-[860px] lg:h-[622px] h-[480px] bg-[#FFFFFF]">
+                <form action="" className="w-[860px] lg:h-[622px] h-[480px] bg-[#FFFFFF]" key={usersModel.id}>
                     <div className="pt-6">
                         <label htmlFor="firstname" 
                         className="text-base font-medium leading-5 text-[#012A4A] ml-6 block">
