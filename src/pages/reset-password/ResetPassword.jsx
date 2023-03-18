@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import FormInput from "../../component/formInput/FormInput";
 import img from "../../assets/signup-image.jpg";
+import ChangePasswordService from "../../component/services/ChangePasswordService";
+import { toast } from 'react-toastify';
 
 
 const ResetPassword = () => {
@@ -12,8 +14,9 @@ const ResetPassword = () => {
     const [passwordModel, setPasswordModel] = useState({
 
         email : "",
-        newPassword : "",
         oldPassword : "",
+        newPassword : "",
+       
         
     });
 
@@ -32,12 +35,12 @@ const ResetPassword = () => {
           },
         {
           id : 2,
-          name : "oldpassword",
+          name : "oldPassword",
           type : "password",
           placeholder : "Current Password",
           errorMessage : "Password should be 8-20 characters and includes atleast 1 letter, 1 number, and 1 special character",
           label : "Current Password",
-          value : passwordModel.newPassword,
+          value : passwordModel.oldPassword,
           pattern :`^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
           required: true,
         },
@@ -49,23 +52,40 @@ const ResetPassword = () => {
           placeholder : "New Password",
           errorMessage : "Password should be 8-20 characters and includes atleast 1 letter, 1 number, and 1 special character",
           label : "New Password",
-          value : passwordModel.oldPassword,
+          value : passwordModel.newPassword,
           pattern :`^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
           required: true,
         }
   ]
   
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    navigate("/login");
-}
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     navigate("/login");
+// }
 
 const onChange = (e) => {
     setPasswordModel({...passwordModel, [e.target.name]: e.target.value});
     
   }
 
+  const changePassword = (e) => {
+    e.preventDefault();
+    ChangePasswordService.changePassword(passwordModel).then((response) => {
+
+        setPasswordModel(response);
+            toast.success("Password changed successfully");  
+    })
+    .catch((error) => {
+        console.log(error);    
+    })
+
+    setTimeout(() => {
+        navigate("/login");
+    }, 5000);
+
+  }
+ 
 
     return ( 
         <section>
@@ -82,7 +102,7 @@ const onChange = (e) => {
                             Reset Password
                         </h1>
                     </div>
-                    <form action="/" method="/" onSubmit={handleSubmit}>
+                    <form action="/" method="/" onSubmit={changePassword}>
                         <div className="non-italic">
                             {inputs.map((input) => (
 
