@@ -9,10 +9,11 @@ const ResetPassword = () => {
 
     const navigate = useNavigate();
 
-    const [user, setUser] = useState({
+    const [passwordModel, setPasswordModel] = useState({
 
+        email : "",
         newPassword : "",
-        confirmPassword : "",
+        oldPassword : "",
         
     });
 
@@ -21,33 +22,35 @@ const ResetPassword = () => {
         
         {
             id : 1,
-            name : "password",
-            type : "password",
-            placeholder : "Password",
-            errorMessage : "Password should be 8-20 characters and includes atleast 1 letter, 1 number, and 1 special character",
-            label : "Current Password",
-            pattern :`^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+            name : "email",
+            type : "email",
+            placeholder : "Enter your email",
+            errorMessage : "it should be a valid email address!",
+            label : "Email",
+            value : passwordModel.email,
             required: true,
           },
         {
           id : 2,
-          name : "password",
+          name : "oldpassword",
           type : "password",
-          placeholder : "Password",
+          placeholder : "Current Password",
           errorMessage : "Password should be 8-20 characters and includes atleast 1 letter, 1 number, and 1 special character",
-          label : "New Password",
+          label : "Current Password",
+          value : passwordModel.newPassword,
           pattern :`^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
           required: true,
         },
   
         {
           id : 3,
-          name : "confirmpassword",
+          name : "newPassword",
           type : "password",
-          placeholder : "Confirm Password",
-          errorMessage : "Password Don't Match",
-          label : "Confirm Password",
-          pattern : user.password,
+          placeholder : "New Password",
+          errorMessage : "Password should be 8-20 characters and includes atleast 1 letter, 1 number, and 1 special character",
+          label : "New Password",
+          value : passwordModel.oldPassword,
+          pattern :`^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
           required: true,
         }
   ]
@@ -59,7 +62,7 @@ const ResetPassword = () => {
 }
 
 const onChange = (e) => {
-    setUser({...user, [e.target.name]: e.target.value});
+    setPasswordModel({...passwordModel, [e.target.name]: e.target.value});
     
   }
 
@@ -83,7 +86,7 @@ const onChange = (e) => {
                         <div className="non-italic">
                             {inputs.map((input) => (
 
-                                <FormInput  key={input.id} {...input}  values={user[input.name]}
+                                <FormInput  key={input.id} {...input}  values={passwordModel[input.name]}
                                 onChange={onChange} />
                             ))}
                             

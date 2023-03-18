@@ -9,9 +9,9 @@ import { useState } from 'react';
 const Wallet = () => {
 
 
-    const {id} = useParams();
+    //const {id} = useParams();
 
-    // const [profile, setProfile] = useState(1);
+const [usersModel, setUsersModel] = useState();
 
     const navigate = useNavigate();
 
@@ -65,7 +65,7 @@ const Wallet = () => {
                                 <Link to={"#"}>Transfer</Link>
                             </div>
                             <div
-                            onClick={(e) => handleClick(e, id)}
+                            onClick={(e, id) => handleClick(e, usersModel)}
                             className=
                             'lg:w-[204px] w-[102px] h-[51px] bg-[#E5E5E5] flex justify-center items-center border-solid border border-[#012A4A] cursor-pointer'
                             >

@@ -34,6 +34,8 @@ const UserProfileDetails = () => {
         try {
             const response = await GetUser.getUsersById(id);
             setUsersModel(response.data);
+            navigate(`/saveUserProfile/${id}`);
+            console.log(response.data);
         }catch(error){
             console.log(error);
         }
