@@ -3,6 +3,7 @@ import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalance
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import { AiOutlineEyeInvisible } from 'react-icons/ai';
 import { useState } from 'react';
 //import { useState } from 'react';
 
@@ -11,9 +12,31 @@ const Wallet = () => {
 
     //const {id} = useParams();
 
-const [usersModel, setUsersModel] = useState();
+   
+
+    const [show, setShow] = useState(true);
+    const [balance, setBalance] = useState('₦0.00');
+
+    const [usersModel, setUsersModel] = useState();
 
     const navigate = useNavigate();
+
+
+    const hideBalance = () => {
+        setShow((prevState) => {
+            return !prevState;
+        })
+        setBalance('****');
+    }
+
+    const showBalance = () => {
+        setShow((prevState) => {
+          return !prevState;
+        })
+        setBalance('₦0.00');
+        
+      }
+
 
 
     const handleClick = (e, id) => {
@@ -40,7 +63,7 @@ const [usersModel, setUsersModel] = useState();
                                     <h3 className='text-base text-[#012A4A] font-medium leading-5 mb-2'>
                                         Account Balance
                                     </h3>
-                                    <h1 className='text-base lg:text-3xl text-[#012A4A] font-extrabold leading-10 mb-4'>N2,000,000</h1>
+                                    <h1 className='text-base lg:text-3xl text-[#012A4A] font-extrabold leading-10 mb-4'>{balance}</h1>
                                     <div className='font-medium text-base leading-5 text-[#012A4A]'>
                                         <span className='block'>Wema Bank </span>
                                         <span className=''>7337653876</span>
@@ -49,8 +72,18 @@ const [usersModel, setUsersModel] = useState();
                                 </div>
                             </div>
                             <div className="flex-1]">
-                                <span className='flex justify-end items-center mr-6 lg:mr-8 pt-12 cursor-pointer'>
-                                    <VisibilityOutlinedIcon />
+                                <span className='flex justify-end items-center mr-6 lg:mr-8 pt-6 cursor-pointer'>
+                                    {
+                                     show ? (
+                                        <button className="" onClick={hideBalance}>
+                                            <VisibilityOutlinedIcon className='w-[1.7rem] h-[1.7rem]' />  
+                                        </button>
+                                         ) : (
+                                         <button className="" onClick={showBalance}>
+                                            <AiOutlineEyeInvisible className="w-[1.7rem] h-[1.7rem]"/>
+                                         </button>
+                                             )
+                                     }
                                 </span>
                             </div>
                         </div>
