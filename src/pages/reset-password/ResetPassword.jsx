@@ -107,7 +107,9 @@ const onChange = (e) => {
                             {inputs.map((input) => (
 
                                 <FormInput  key={input.id} {...input}  values={passwordModel[input.name]}
-                                onChange={onChange} />
+                                onChange={onChange} 
+                                className="py-2 px-2"
+                                />
                             ))}
                             
                             <div className="mb-6">

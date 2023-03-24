@@ -154,7 +154,9 @@ const inputs = [
 
                         {inputs.map((input) => (
                             <FormInput key={input.id} {...input}  values={usersModel[input.name]}
-                            onChange={onChange} />
+                            onChange={onChange}
+                            className="py-2 px-2"
+                             />
                         ))}
                          <div className="non-italic">
                            <div className="lg:ml-48 non-italic ml-6">

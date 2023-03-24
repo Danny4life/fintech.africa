@@ -91,7 +91,9 @@ const Login = () => {
                             {inputs.map((input) => (
 
                                 <FormInput  key={input.id} {...input}  values={loginModel[input.name]}
-                                onChange={onChange} />
+                                onChange={onChange}
+                                className="py-2 px-2"
+                                 />
                             ))}
                             <div className="mb-6">
                                 <Link to="/password-reset" className="ml-6

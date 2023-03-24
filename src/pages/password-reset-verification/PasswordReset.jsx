@@ -34,7 +34,7 @@ const PasswordReset = () => {
                     name="email"    
                     placeholder="Enter your email" 
                     required 
-                    className="w-[20rem] text-base text-[#C4C4C4] font-light leading-6 mb-4
+                    className="w-[20rem] text-base text-[#000000] font-light leading-6 mb-4
                                 lg:w-[24.688rem] h-[3rem] bg-[#FFFFFF] border-[#000000] 
                                 rounded-md opacity-80 py-2 px-2 border"
                     />
